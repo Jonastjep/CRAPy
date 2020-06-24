@@ -84,10 +84,10 @@ void calibration() {
   val2 = analogRead(2);
   val3 = analogRead(3);
 
-  map(10, 0, val0, 0, 100);
-  map(11, 0, val1, 0, 100);
-  map(12, 0, val2, 0, 100);
-  map(13, 0, val3, 0, 100);
+  10 = map(10, 0, val0, 0, 100);
+  11 = map(11, 0, val1, 0, 100);
+  12 = map(12, 0, val2, 0, 100);
+  13 = map(13, 0, val3, 0, 100);
 
 
   
