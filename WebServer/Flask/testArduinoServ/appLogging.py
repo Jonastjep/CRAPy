@@ -1,6 +1,6 @@
 import time, sqlite3, serial
 
-ser = serial.Serial('/dev/ttyACM0', 9600)
+ser = serial.Serial('/dev/ttyUSB0', 9600)
 
 dbname = "sensorData.db"
 

@@ -3,12 +3,13 @@
 #include <Adafruit_BMP280.h>
 
 //all the pins can be chosen as wishes
-#define BMP_SCK  (13)
-#define BMP_MISO (12)
-#define BMP_MOSI (11)
-#define BMP_CS   (10)
+#define BMP_SCK  (13) //SCK
+#define BMP_MISO (10) //SDO
+#define BMP_MOSI (12) //SDI
+#define BMP_CS   (11) //CS
 
-Adafruit_BMP280 bmp(BMP_CS); // hardware SPI
+//Adafruit_BMP280 bmp(BMP_CS); //HARDWARE SPI
+Adafruit_BMP280 bmp(BMP_CS, BMP_MOSI, BMP_MISO,  BMP_SCK);
 
 void setup() {
   Serial.begin(9600);
