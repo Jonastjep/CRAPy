@@ -5,6 +5,7 @@ import RPi.GPIO as GPIO
 import time
 import sqlite3
 conn = sqlite3.connect('Sensordata.db')
+c = conn.cursor()
 GPIO.setmode(GPIO.BCM)
 
 #Front Sensor Pin location
@@ -26,11 +27,6 @@ dist2 = distance(pulse_dur)
 
 theTime = time.asctime()
 #Add server for database
-conn.execute("INSERT INTO Sonic VALUES (?,?,?,?);", (NULL,dist1,dist2,theTime);
+c.execute("INSERT INTO Sonic VALUES (?,?,?,?);", (NULL,dist1,dist2,theTime)
 conn.commit()
-
-setup(TRIG2,ECHO2)
-pulse_dur = trigger(TRIG2,ECHO2)
-dist = distance(pulse_duration)
-
-conn.close()
+c.close()
