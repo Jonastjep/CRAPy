@@ -89,7 +89,7 @@ def plot_temp():
 	ys = temps
 	fig = Figure()
 	axis = fig.add_subplot(1, 1, 1)
-	axis.set_title("Temperature [°C]")
+	axis.set_title("Temperature [C]")
 	axis.set_xlabel("Samples")
 	axis.grid(True)
 	xs = range(numSamples)
