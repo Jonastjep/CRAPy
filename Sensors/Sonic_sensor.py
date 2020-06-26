@@ -21,10 +21,10 @@ def trigger(TRIG, ECHO):
     #listen for the return sound, record times
     while GPIO.input(ECHO)==0:
         pulse_start = time.time()
-    
+
     while GPIO.input(ECHO)==1:
         pulse_end = time.time()
-    
+
     pulse_duration = pulse_end - pulse_start
     return pulse_duration
 
