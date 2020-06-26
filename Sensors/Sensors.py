@@ -27,6 +27,6 @@ dist2 = distance(pulse_dur)
 
 theTime = time.asctime()
 #Add server for database
-c.execute("INSERT INTO Sonic VALUES (?,?,?,?);", (NULL,dist1,dist2,theTime)
+c.execute("INSERT INTO Sonic VALUES (?,?,?,?);" ,(NULL,dist1,dist2,theTime))
 conn.commit()
 c.close()
