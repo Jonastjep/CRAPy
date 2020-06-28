@@ -13,303 +13,41 @@
         width: 100%;
       }
     </style>
-	<base href="file:///C:/sqlite/"/>
   </head>
 
   <body>
-    
+
     <div id="map"></div>
-	
     <script>
-		var db;
-		var latitudes = [];
-		var longitudes = [];
-		var altitudes = [];
-
-		var centerLat = 0;
-		var centerLon = 0;
-		
-		window.onload = function(){
-		var iframe = document.createElement('iframe');
-		iframe.id = 'iframe';
-		iframe.style.display = 'none';
-		document.body.appendChild(iframe);
-		iframe.src = 'gpsdata.db';
-		setTimeout(function(){
-			db = document.getElementById('iframe').contentDocument.body.firstChild.innerHTML;
-			alert(db);
-		}, 1000);
-		
-		function sleep(milliseconds) {
-		const date = Date.now();
-		let currentDate = null;
-		do {
-			currentDate = Date.now();
-		} while (currentDate - date < milliseconds);
-		}
-		
-
-		<!-- whatever is below here is wrong and needs to be changed when whatever up there is working^ -->
-		let db = new sqlite3.Database('C:/sqlite/gpsdata.db', sqlite3.OPEN_READWRITE, (err) => {
-		if (err) {
-			console.error(err.message);
-		}
-		console.log('Connected to the GPS database.');
-		});
-
-		db.each("SELECT * FROM GPSDATA", [], (err, row) => {
-			if (err) {
-			console.error(err.message);
-			}
-    
-			latitudes.push(row.LATITUDE);
-			longitudes.push(row.LONGITUDE);
-			altitudes.push(row.ALTITUDE);
-	
-		});
-		
-		console.log("Main thread sleeping now");
-		sleep(5000);
-		console.log("Main thread resuming");
-
-		db.close((err) => {
-		if (err) {
-		console.error(err.message);
-		}
-
-		console.log('Closed the database connection.');
-		});
-		
-		centerLat = (Math.max.apply(null,latitudes) + Math.min.apply(null,latitudes))/2;
-		centerLon = (Math.max.apply(null,longitudes) + Math.min.apply(null,longitudes))/2;
 	  
-
-		function initMap() {
-			var options = {
-			zoom: 12,
-			center: {
-				lat: centerLat,
-				lng: centerLon
-			}
-			}
-
-			var map = new google.maps.Map(document.getElementById('map'), options);
-
-			var i;
-			for(i=0;i<latitudes.length;i++){
-				var location = new google.maps.LatLng(latitudes[i],longitudes[i]);
-				var marker = new google.maps.Marker({
-					position: location,
-					title: "Test"
-				
-				});
-				
-				marker.setMap(map);
-			}
-			
-
-		}
-
+	  function initMap(){
+		var tdata = {{ templateData|tojson }};
+		var lats = tdata['latitudes'];
+		var lngs = tdata['longitudes'];
 		
+		var centerLat = (Math.max.apply(null,lats) + Math.min.apply(null,lats))/2;
+		var centerLng = (Math.max.apply(null,lngs) + Math.min.apply(null,lngs))/2;
+		
+		
+	    var options = { zoom: 11, center: {lat: centerLat, lng: centerLng}}
+          
+	    map = new google.maps.Map(document.getElementById('map'), options);
+		
+		var i;
+		for(i =0; i<lats.length ; i++){
+		  marker = new google.maps.Marker({position: {lat: lats[i], lng: lngs[i]}, map: map});
+		}
+		
+		
+	  }
+      
     </script>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfqaZwQhSsYGhvkMybKRDSeiEVU1cpFus&callback=initMap">
     </script>
 
   </body>
-
-  </html>
->
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Google Map</title>
-  <style>
-    #map {
-      height: 400px;
-      width: 100%;
-    }
-  </style>
-</head>
-
-<body>
-  <div id="map"></div>
-  <script>
-    var coords = [];
-    var markerArr = [];
-    var desc = '';
-    var map;
-    var markers = [];
-    var newMarker = [1];
-    var properties = [];
-    var sendMarker;
-
-    function initMap() {
-      var options = {
-        zoom: 11,
-        center: {
-          lat: 50.8514,
-          lng: 5.6910
-        }
-      }
-
-      map = new google.maps.Map(document.getElementById('map'), options);
-
-      google.maps.event.addListener(map, 'click',
-        function(event) {
-
-          if (newMarker.length < 2) {
-
-
-            addNewMarker({
-              coords: event.latLng,
-              content: desc
-            });
-
-          }
-
-        })
-
-
-
-
-
-      function addNewMarker(props) {
-        var marker = new google.maps.Marker({
-          position: props.coords,
-          map: map
-        });
-        // console.log(props.coords.toString());
-        var regex = /[+-]?\d+(\.\d+)?/g;
-
-        var str = props.coords.toString();
-        var floats = str.match(regex).map(function(v) {
-          return parseFloat(v);
-        });
-        console.log(floats);
-        sendMarker = {
-          'description': desc,
-          'lat': floats[0],
-          'long': floats[1]
-        }
-        // coords.push(props.coords);
-        newMarker.push(marker)
-
-        if (props.iconImage) {
-          marker.setIcon(props.iconImage);
-        }
-        if (props.content) {
-          var infoWindow = new google.maps.InfoWindow({
-            content: props.content
-          });
-
-          marker.addListener('click', function() {
-            infoWindow.open(map, marker);
-          });
-        }
-      }
-
-    }
-
-    function addMarker(props) {
-      var marker = new google.maps.Marker({
-        position: props.coords,
-        map: map
-      });
-      coords.push(props.coords);
-      markerArr.push(marker)
-
-      if (props.iconImage) {
-        marker.setIcon(props.iconImage);
-      }
-      if (props.content) {
-        var infoWindow = new google.maps.InfoWindow({
-          content: props.content
-        });
-
-        marker.addListener('click', function() {
-          infoWindow.open(map, marker);
-        });
-      }
-    }
-
-    window.onmessage = (event) => {
-      if (event.data) {
-
-
-        if (isString(event.data)) {
-          document.getElementById("theLabel").innerHTML = event.data;
-          desc = event.data;
-        } else {
-
-          event.data.forEach(e => {
-            addMarker({
-              coords: {
-                lat: e.lat,
-                lng: e.long
-              },
-              content: e.description
-            });
-
-          });
-
-
-        }
-      }
-    };
-
-    function setMapOnAll(map) {
-      for (var i = 0; i < markerArr.length; i++) {
-        markerArr[i].setMap(map);
-      }
-    }
-
-    function setMapOnNew() {
-      for (var i = 1; i < newMarker.length; i++) {
-        newMarker[i].setMap(null);
-      }
-    }
-
-    function clearMarkers() {
-      setMapOnAll(null);
-    }
-
-    function clearNewMarkers() {
-      setMapOnNew();
-    }
-
-    function button_click() {
-      console.log(sendMarker.lat.toString());
-      window.parent.postMessage(sendMarker, "*");
-    }
-
-
-    // Shows any markers currently in the array.
-    function showMarkers() {
-      setMapOnAll(map);
-    }
-
-    function isString(obj) {
-      return (Object.prototype.toString.call(obj) === '[object String]');
-    }
-
-    // Deletes all markers in the array by removing references to them.
-    function deleteMarkers() {
-      if (newMarker.length == 2) {
-
-
-        clearNewMarkers();
-        newMarker.pop();
-      }
-
-    }
-  </script>
-
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfqaZwQhSsYGhvkMybKRDSeiEVU1cpFus&callback=initMap">
-  </script>
-
-</body>
-
 </html>
+
+
+
