@@ -77,7 +77,7 @@ def index():
 
 	}
 
-	return render_template('index.html', **templateData)
+	return render_template('indexWithMap.html', **templateData)
 
 @app.route('/', methods=['POST'])
 def my_form_post():
