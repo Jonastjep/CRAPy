@@ -8,6 +8,8 @@ app = Flask(__name__)
 conn = sqlite3.connect('../sensorData.db', check_same_thread=False)
 curs = conn.cursor()
 
+print("\n\nHOW TO START THE SENSOR WEB SERVER\n\n")
+
 def queryLastData():
 	conn = sqlite3.connect('../sensorData.db')
 	curs = conn.cursor()

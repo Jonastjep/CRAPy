@@ -1,0 +1,15 @@
+10 wheel front left
+13 steering front left
+
+19 wheel front right
+11 steering front right
+
+18 steering back left
+12 wheel back left
+
+17 wheel back right
+15 steering back right
+
+14 wheel middle left
+16 wheel middle right
+
