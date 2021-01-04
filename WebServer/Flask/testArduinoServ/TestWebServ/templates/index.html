@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+
+<head>
+	<title>{{ title }}</title>
+</head>
+
+<body>
+	<h3>{{ time }} </h3>
+	<h3>{{ temperature }}</h3>
+	<h3>{{ pressure }}</h3>
+	<h3>{{ altitude }}</h3>
+	<hr>
+	<h3> Last Sensors Reading: {{ time }} ==> <a href="/"class="button">REFRESH</a></h3>
+	<hr>
+
+	<h3> HISTORICAL DATA </h3>
+	<p> Enter number of samples to retrieve:
+	<form method="POST">
+		<input name="numSamples" value= {{numSamples}}>
+		<input type="submit">
+	</form></p>
+
+	<hr>
+	<img src="/plot/temp" alt="Image Placeholder" width="33%">
+	<img src="/plot/pres" alt="Image Placeholder" width="33%">
+	<img src="/plot/alt" alt="Image Placeholder" width="33%">
+</body>
+
+</html>
