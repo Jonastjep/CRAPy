@@ -1,5 +1,0 @@
-username: pi
-pwd: BroverInc
-hostname: broverpi
-
-ip address: 
