@@ -24,6 +24,6 @@ for i in range(delta.days + 1):
     day = sdate + timedelta(days=i)
     f.write(day.strftime("\n## Progress: %A %d %B, %Y")+"\n")
     for name in students:
-        f.write("\n\t" + name +":\n")
+        f.write("\n#### " + name +":\n\n")
 
 f.close()
