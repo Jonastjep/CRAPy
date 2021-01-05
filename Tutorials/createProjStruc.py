@@ -38,6 +38,6 @@ def printProgressReportContent():
 
     for i in range(delta.days + 1):
         day = sdate + timedelta(days=i)
-        f.write("[**Daily Report - {} : {}**](https://github.com/Jonastjep/CRAPy/blob/master/ProgressReport_CRAPy.md#progress-{}-{}-{}-{})\n\n".format(day.strftime("%m/%d/%Y"),day.strftime("%A %d %B, %Y"),day.strftime("%A").lower(),day.strftime("%d"),day.strftime("%B").lower(),day.strftime("%Y")))
+        f.write("[**Daily Report - {} : {}**](https://github.com/Jonastjep/CRAPy/blob/master/ProgressReport_CRAPy.md#progress-{}-{}-{}-{})\n\n".format(day.strftime("%d/%m/%Y"),day.strftime("%A %d %B, %Y"),day.strftime("%A").lower(),day.strftime("%d"),day.strftime("%B").lower(),day.strftime("%Y")))
 
     f.close()
