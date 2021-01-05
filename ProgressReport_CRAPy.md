@@ -10,7 +10,7 @@
 
 
 #### Jonas:
-- Restructured the github repo for the new project (deleted unecessary files and changed directory struct) and created a [script](https://github.com/Jonastjep/CRAPy/blob/master/Tutorials/createProjStruc.py) to make this file
+- Restructured the github repo for the new project (deleted unecessary files and changed directory struct) and created a [script](https://github.com/Jonastjep/CRAPy/blob/master/Tutorials/createProjStruc.py) to make this file. Also created a table of content for facilitating the readers.
 - Improved the [Genetic NN code](https://github.com/Jonastjep/TinyProjects/tree/main/ObstacleAvoidance/ObstacleAvoidance_js/AI_version "Some cool stuff!") for automated obstacle avoidance ([click here to see the training in action](https://jonastjep.github.io/TinyProjects/)):
 	- Changed the NN code from homebuilt to TensorFlow.js (more ressource hungry but more efficient on many levels)
 	- Tried to improve the fitness function a little (failure to notice any differences, need to rething the architecture and verify any mistakes)

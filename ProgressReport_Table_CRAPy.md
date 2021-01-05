@@ -1,7 +1,3 @@
-# CRAPy Project
-
-The Controlable Rover Automation Project (CRAPy using Python). This project is built on the Swappy rover and tries to add new functionalities to it.
-
 # Project Daily Progress Report
 
 ## Table of Content
@@ -63,4 +59,4 @@ The Controlable Rover Automation Project (CRAPy using Python). This project is b
 [**Daily Report - 01/31/2021**](https://github.com/Jonastjep/CRAPy/blob/master/ProgressReport_CRAPy.md#progress-sunday-31-january-2021)
 
 [**Daily Report - 02/01/2021**](https://github.com/Jonastjep/CRAPy/blob/master/ProgressReport_CRAPy.md#progress-monday-01-february-2021)
- 
+
