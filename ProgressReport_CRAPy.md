@@ -23,6 +23,9 @@
 
 #### Marco:
 
+- started to create the environment in which the lidar software can be tested
+- learnt how different pathfinding algorithms work in respect to lidar
+	- looked over existing code to get an initial idea of how the software can be structured
 
 #### Timon:
 
