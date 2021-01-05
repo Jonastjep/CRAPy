@@ -13,7 +13,7 @@ students = [
 "Juliette",
 "Marco",
 "Timon",
-"Yogi"
+"Sushant"
 ]
 
 
