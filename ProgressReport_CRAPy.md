@@ -7,7 +7,9 @@
 
 
 #### Francesco:
-
+- Carried out first tutorials for processing so I can get some knowledge on the graphical part of the Genetic NN code
+- Dowloaded Anaconda, Processing and Atom to work with python
+- Read part of the script for creating the plaentary climate model. I have figured out the variables needed but my knowledge of python and physics isn't good enough yet to make sense of most part of the code. If you want to check it out you can find it on (https://github.com/Planet-Factory/claude/blob/master/CLAuDE%20NOM.pdf)
 
 #### Jonas:
 - Restructured the github repo for the new project (deleted unecessary files and changed directory struct) and created a [script](https://github.com/Jonastjep/CRAPy/blob/master/Tutorials/createProjStruc.py) to make this file. Also created a table of content for facilitating navigation for the readers.
@@ -38,7 +40,10 @@
 
 
 #### Francesco:
-
+- Learned the basic use of Arduino and RaspberryPi and how these can be connected to various sensors through flask. The level was very basic but I understood how the basic electronics and programming principles behind switching on and off a LED light connected to an Arduino through a potentiometer. Pretty useful tutorial to get a hang of how arduino's work in case you don't know it yet (https://www.youtube.com/watch?v=nL34zDTPkcs&ab_channel=Afrotechmods)
+- Watched another series of tutorials on how to use Processing and how to programme interactive geometrical shapes and drawings
+- Attended the amazing tutorial by jonas on how to work with Flask and GitHub
+- Dowloaded Git and watched a couple of extra tutorials on how to use Git and the basic principles of Flask
 
 #### Jonas:
 
