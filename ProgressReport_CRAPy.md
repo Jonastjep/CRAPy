@@ -46,7 +46,11 @@
 - Dowloaded Git and watched a couple of extra tutorials on how to use Git and the basic principles of Flask
 
 #### Jonas:
-
+- Gave a (very) long and hopefully interesting tutorial about the pleasures of SSH, VNC, Flask and Git/Github. 
+- Discussed with Sushant the ways he could implement a sensor graphic onto the Flask server and the advantages of JSON or SQLite. Not yet conclusive, so keep an eye on Sushants work.
+- Struggled with the AMG8833 thermal sensing module. Got values out, so this is nice, but absolutely impossible to find a way to plot it and refused to use PyGame, which would have no feasible way of implementing to a flask app. Tried matplotlib, seaborn, plotly and openCV, best result to have come out was OpenCV but was not successful at animating it. Just realized that p5.js might be a good possibility, but have to see how to pass the data to the script... Positive side is that the sensor is working and it is possible to see from the values the wiggle of fingers. 
+	- The problems encountered is how do I create the 8x8 images, and simultaneously send them to the js script for reading
+- Also Started working on a cheat file for the Git/ssh commands. Will be available tomorrow probably
 
 #### Juliette:
 
