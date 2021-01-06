@@ -28,7 +28,8 @@
 - learnt how different pathfinding algorithms work in respect to lidar
 	- looked over existing code to get an initial idea of how the software can be structured
 
-#### Timon:
+#### Timon: 
+-Brainstorm ideas for arm redesign (different platform position, gearing and toolchanger)
 
 
 #### Sushant:
@@ -60,7 +61,7 @@
 
 
 #### Timon:
-
+-Optimize slicer profile for PETG filament
 
 #### Sushant:
 
