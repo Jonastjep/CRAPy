@@ -58,6 +58,9 @@
 
 
 #### Marco:
+- succesfully created version one of the environment to test the lidar. Point clouds are now generated on command if objects are within range of the simulated lidar. Still need to fix so the lidar range is blocked by objects (currently there is clipping). 
+	- The simulated rover only moves up/down/left/right instead of forward/backwards/rotation -> this needs to be fixed to better simulate the rovers movements
+	- the lidar also will need to be changed to simulate blockages
 
 
 #### Timon:
