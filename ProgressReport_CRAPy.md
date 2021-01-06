@@ -85,9 +85,9 @@
 
 
 #### Marco:
-fixed lidar environment.
+- Fixed lidar environment.
 	- now only objects in rover fov are added to point cloud - as would be the case with real lidar. movement mechanic logic was changed to make smoother use. rover no longer clips through obstacles. point clouds still generated on command. personal computer broke so started using jonas' spare. files in branch Marco are by marco despite being pushed by different user - this valid until specified. 
-3d design
+- 3d design
 	- discussed with adjaye and timon the way forward regarding design of components. outlined 6 reccesary practical aspects of the project; 5x ultrasound mounts for hardpoints onto rover body, robotic arm with manipluation attachment, solar panel/ material deposit tray, fix current defective pieces, camera/lidar mount, other small sensor housings.
 	- work split as follows; timon - robotic arm, adjaye - solar panel and material deposit, marco - camera and lidar mount, whole team - fix current defective pieces,  ultrasound mounts and small sensor housings are trivial designs open to whoever wants.
 
