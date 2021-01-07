@@ -122,11 +122,12 @@
 
 
 #### Timon:
--Develop and 3D print (and improve it again) a snap on attachmet that can be used to attach all other sensors etc. to the rover.
--identify broken parts on the rover that need to be reprinted
--start printing replacement parts with reiforcememnt out of PETG for the rover
--experiment with drilling of the axles to aviod slipping
--retrieving a vice to hold the axles while drilling them
+- Develop and 3D print (and improve it again) a snap on attachmet that can be used to attach all other sensors etc. to the rover.
+- identify broken parts on the rover that need to be reprinted
+- start printing replacement parts with reiforcememnt out of PETG for the rover
+- experiment with drilling of the axles to aviod slipping
+- retrieving a vice to hold the axles while drilling them
+- drilling hoes into all axles to prevent slipping
 
 #### Sushant:
 
