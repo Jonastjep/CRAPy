@@ -103,7 +103,9 @@
 
 
 #### Francesco:
-
+- Menaged to connect to raspberry pi from Italy through ssh and VNC, controlled the temperature sensor.
+- Next step is try to build a database with sqlite, store in it the data obtained from the temperature sensor and form a graph using Matplotlib. Then display the data using JustGage and then make the graphed data available through a web app made with flask. It's a work in progress
+- To do all pf this with my little knowledge I have also been following some tutorials on how to programme with python, especially in the context of 
 
 #### Jonas:
 
