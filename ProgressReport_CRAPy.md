@@ -64,7 +64,9 @@
 
 
 #### Timon:
--Optimize slicer profile for PETG filament
+-Optimize slicer profile for PETG filament and do test prints
+-Develop more concrete ideas for the robotic arm and find out what the different available motors are capable of.
+
 
 #### Sushant:
 
@@ -92,6 +94,9 @@
 	- work split as follows; timon - robotic arm, adjaye - solar panel and material deposit, marco - camera and lidar mount, whole team - fix current defective pieces,  ultrasound mounts and small sensor housings are trivial designs open to whoever wants.
 
 #### Timon:
+-3D model bracket that mounts to rover for arm
+- discoss with adjaye how the arm and the solar panel can be operated on the rover
+-start tallking about ideas of how to stop the axles from slipping
 
 
 #### Sushant:
@@ -117,7 +122,11 @@
 
 
 #### Timon:
-
+-Develop and 3D print (and improve it again) a snap on attachmet that can be used to attach all other sensors etc. to the rover.
+-identify broken parts on the rover that need to be reprinted
+-start printing replacement parts with reiforcememnt out of PETG for the rover
+-experiment with drilling of the axles to aviod slipping
+-retrieving a vice to hold the axles while drilling them
 
 #### Sushant:
 
