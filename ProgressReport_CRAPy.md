@@ -132,6 +132,7 @@
 - began designing first iteration of the camera/lidar sensor mast
 - reviewed current physical design flaws and neccesary improvements 
 - reveiwed methods to export point cloud data from ROS into a more managable format for end-used consumption
+- set up fusion 360 team and made accessible the previous design of the rover for design reference
 
 #### Timon:
 - Develop and 3D print (and improve it again) a snap on attachmet that can be used to attach all other sensors etc. to the rover.
@@ -161,7 +162,7 @@
 
 
 #### Marco:
-
+-continued the design process for the sensor mast, worked through two iterations each using a different design to move camera and optical equiptment. finalised the orientation of equiptment on the mast, as lidar needs a 360 degree unimpeded view whereas if camera and optical equiptment has small blindspots it is not a big issue (given that default position is unimpeded).
 
 #### Timon:
 
