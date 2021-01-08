@@ -81,7 +81,9 @@
 - Looking into using python to code  for the sensors' module. Still far away from what I need to know
 
 #### Jonas:
-
+- Wrote the Git/Github [tutorial](https://github.com/Jonastjep/CRAPy/blob/master/Tutorials/Setting_Git%26Github.md) for the team
+- Managed to stream the thermal camera using Python websockets and processing!! :) This should be very low computing for the RPi and low latency as it's the host computer that does all the work. Nice video example. Still need to do the interpolation (we hope for bicubic) that might make it a bit heavier for the Rpi but not much. But this took some time...
+- Had a look at the LiDAR and despaired on the discovery that it can only be controlled through ROS
 
 #### Juliette:
 
@@ -113,7 +115,9 @@
 - To do all pf this with my little knowledge I have also been following some tutorials on how to programme with python, especially in the context of 
 
 #### Jonas:
-
+- Discovered the pressure sensor was not working (only after a loooong period of troubleshooting) so had to solder a new one together and conect it to the RPi to allow access through ssh for Francesco. Also had to figure out how to configure the I2P port address for the [Adafruit BMP280 libraries](https://github.com/adafruit/Adafruit_CircuitPython_BMP280/blob/f65303074498e07db883e73c067a8b9e491451a2/adafruit_bmp280.py#L399). Alot of issues due to the fact our sensor is not genuine. Also had to figure out if it was a BME280 or BMP280 (it's the latter). Alot of time went into just figuring out these things.
+- Had a zoom conference with Italy to help with taking control of a remote server (a RPi) and using it to run some python software.
+- Spent some time reflashing another RPi and updating it up. Issues with the headless connection through wifi but fixable.
 
 #### Juliette:
 
