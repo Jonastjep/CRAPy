@@ -123,7 +123,10 @@
 
 
 #### Marco:
-
+- partially installed the neccesary ROS software needed to operate lidar (still proving to be tricky)
+- began designing first iteration of the camera/lidar sensor mast
+- reviewed current physical design flaws and neccesary improvements 
+- reveiwed methods to export point cloud data from ROS into a more managable format for end-used consumption
 
 #### Timon:
 - Develop and 3D print (and improve it again) a snap on attachmet that can be used to attach all other sensors etc. to the rover.
