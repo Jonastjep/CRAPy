@@ -5,7 +5,7 @@
 
 #### Adjaye:
 
-Downloaded Fusion 360 and began brainstorming ideas for CAD design.
+- Downloaded Fusion 360 and began brainstorming ideas for CAD design.
 
 #### Francesco:
 - Carried out first tutorials for processing so I can get some knowledge on the graphical part of the Genetic NN code
@@ -40,7 +40,7 @@ Downloaded Fusion 360 and began brainstorming ideas for CAD design.
 
 #### Adjaye:
 
-Listened in to the tutorial by Jonas and began testing/practicing making objects in Fusion 360.
+- Listened in to the tutorial by Jonas and began testing/practicing making objects in Fusion 360.
 
 
 #### Francesco:
@@ -78,7 +78,7 @@ Listened in to the tutorial by Jonas and began testing/practicing making objects
 
 #### Adjaye:
 
-Collaborating with Timon to decide which aspects of the design we will be in charge of and getting the basic run down of the parts needed in this iteration of the project and their importance from Marco and Jonas.
+- Collaborating with Timon to decide which aspects of the design we will be in charge of and getting the basic run down of the parts needed in this iteration of the project and their importance from Marco and Jonas.
 
 #### Francesco:
 - Manged to set my git (baby steps for a bio students)
@@ -111,7 +111,7 @@ Collaborating with Timon to decide which aspects of the design we will be in cha
 ## Progress: Thursday 07 January, 2021
 
 #### Adjaye: 
--Continuing to develop ideas for the rover's solar panel and sample box design.
+- Continuing to develop ideas for the rover's solar panel and sample box design.
 
 
 #### Francesco:
@@ -147,8 +147,8 @@ Collaborating with Timon to decide which aspects of the design we will be in cha
 ## Progress: Friday 08 January, 2021
 
 #### Adjaye:
--Collaborating with Timon on solar panel and sample box design
--Begin implementing the design into CAD
+- Collaborating with Timon on solar panel and sample box design
+- Begin implementing the design into CAD
 
 
 #### Francesco:
