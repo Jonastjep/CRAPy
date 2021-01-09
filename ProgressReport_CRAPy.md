@@ -22,7 +22,8 @@
 - Looked a little around to see the capabilities of the thermal IR sensor and bicubic interpolation of 2D grid.
 
 #### Juliette:
-
+- Downloaded programs (Fusion 360, installed Python and Atom)
+- Read through python textbook, created list of basic commands
 
 #### Marco:
 - started to create the environment in which the lidar software can be tested
@@ -58,7 +59,9 @@
 - Also Started working on a cheat file for the Git/ssh commands. Will be available tomorrow probably
 
 #### Juliette:
-
+- Attended Jonas' tutorials on Git/GitHub, SSH, and Flask and began practicing/researching basic concepts.
+- Downloaded and Installed Git and Flask
+- Started practicing and brainstorming on Fusion 360 
 
 #### Marco:
 - succesfully created version one of the environment to test the lidar. Point clouds are now generated on command if objects are within range of the simulated lidar. Still need to fix so the lidar range is blocked by objects (currently there is clipping).
@@ -90,7 +93,8 @@
 - Had a look at the LiDAR and despaired on the discovery that it can only be controlled through ROS
 
 #### Juliette:
-
+- Began Flask tutorial from the official website
+- Created basic "Hello, World" app with Flask
 
 #### Marco:
 - Fixed lidar environment.
@@ -125,7 +129,7 @@
 - Spent some time reflashing another RPi and updating it up. Issues with the headless connection through wifi but fixable.
 
 #### Juliette:
-
+- Continued tutorial for a longer app with Flask
 
 #### Marco:
 - partially installed the neccesary ROS software needed to operate lidar (still proving to be tricky)
@@ -159,7 +163,9 @@
 
 
 #### Juliette:
-
+- Had issues with the Flask app and the virtual environment, solved now.
+- Installed PUTTy for SSH and connected to Raspberry pi
+- Making app with flask and SQLite for sensors from Raspberrypi
 
 #### Marco:
 -continued the design process for the sensor mast, worked through two iterations each using a different design to move camera and optical equiptment. finalised the orientation of equiptment on the mast, as lidar needs a 360 degree unimpeded view whereas if camera and optical equiptment has small blindspots it is not a big issue (given that default position is unimpeded).
