@@ -31,7 +31,7 @@
 	- looked over existing code to get an initial idea of how the software can be structured
 
 #### Timon:
--Brainstorm ideas for arm redesign (different platform position, gearing and toolchanger)
+- Brainstorm ideas for arm redesign (different platform position, gearing and toolchanger)
 
 
 #### Sushant:
@@ -70,8 +70,8 @@
 
 
 #### Timon:
--Optimize slicer profile for PETG filament and do test prints
--Develop more concrete ideas for the robotic arm and find out what the different available motors are capable of.
+- Optimize slicer profile for PETG filament and do test prints
+- Develop more concrete ideas for the robotic arm and find out what the different available motors are capable of.
 
 
 #### Sushant:
@@ -106,7 +106,7 @@
 #### Timon:
 -3D model bracket that mounts to rover for arm
 - discoss with adjaye how the arm and the solar panel can be operated on the rover
--start tallking about ideas of how to stop the axles from slipping
+- start tallking about ideas of how to stop the axles from slipping
 
 
 #### Sushant:
@@ -161,7 +161,12 @@
 - Menaged to create a working database and programme to store the data directly from the sensor. Next step is to create a query, to format the raw data into a readable form. Then a falask web app to visualise this form.
 
 #### Jonas:
-
+- Wrote the Raspberry [Pi setup/connection tutorial](https://github.com/Jonastjep/CRAPy/blob/master/Tutorials/Setting_Up_The_RPi.md) that explains how to setup a headless RPi and take control of it. 
+- Also wrote the [ssh and remote control of system tutorial](https://github.com/Jonastjep/CRAPy/blob/master/Tutorials/RemoteConnection_tutorial.md), to explain how to remotely use a GNU/Linux system (specifically RPi) from afar.
+- Helped Juliette a little bit with flask (Vorführeffekt) and gave some advice to Francesco.
+- Disassembled the suspentions of the Rover with Timon to test out the new PETG part, but infill was too low and piece cracked when pushing it with a bearing. 
+- Rethought the fitness function of the genetic AI: add negative fitness points to models that turn too much and that don't push on the forward button. This should take care of the ones that turn in a circle indefinitely as well as the ones that just stop down.
+	- Added features that allow for death timer to be removed and added the choice to leave the forward motion to the rover (we can now force the rover to always have it's foot on the accelerator - it totally removes the problem of static cars and disfavours the rotating ones)
 
 #### Juliette:
 - Had issues with the Flask app and the virtual environment, solved now.
@@ -169,7 +174,7 @@
 - Making app with flask and SQLite for sensors from Raspberrypi
 
 #### Marco:
--continued the design process for the sensor mast, worked through two iterations each using a different design to move camera and optical equiptment. finalised the orientation of equiptment on the mast, as lidar needs a 360 degree unimpeded view whereas if camera and optical equiptment has small blindspots it is not a big issue (given that default position is unimpeded).
+- continued the design process for the sensor mast, worked through two iterations each using a different design to move camera and optical equiptment. finalised the orientation of equiptment on the mast, as lidar needs a 360 degree unimpeded view whereas if camera and optical equiptment has small blindspots it is not a big issue (given that default position is unimpeded).
 
 #### Timon:
 
@@ -186,7 +191,8 @@
 No progress due to trip from Italy to Maastrict! The car broke down.
 
 #### Jonas:
-
+- Worked on implementing the new fitness model to the genetic algorithm. The changes don't gives very different results, probably because the values are not well set... Need to sit down and think about the optimal aditions of fitness values to the score.
+- Also looked into making the cross-over. I (or someone else from the team) should probably continue the python implementation, as python has many more tools for these tasks. It's just nice that p5.js can be run on the browser.
 
 #### Juliette:
 
@@ -209,13 +215,13 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 
 #### Jonas:
-
+- total day off :) (almost)
 
 #### Juliette:
 
 
 #### Marco:
--nothing this was day off 
+- nothing this was day off 
 
 #### Timon:
 
