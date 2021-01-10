@@ -191,7 +191,7 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 
 #### Marco:
-
+- completed the design for the uper part sensor mast where optical sensors are located. stl file of upper part available under my branch. now only need to design a secure method to fix bottom end of pvc pipe to rover body and sensor assembly will be complete. 
 
 #### Timon:
 
