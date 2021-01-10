@@ -157,7 +157,7 @@
 
 
 #### Francesco:
-
+- Still working on the creation of a web app to store and display the data from the temperature and pressure sensor (BMP280). Until now I managed to build a database with sqlite, store in it the data obtained from the temperature sensor. The next step is to form a graph using Matplotlib and display the data using JustGage. Ultimately the app for display will be made with flask but to do so I think I will need to be in maastricht to get some assistance from more experienced prigrammers... Jonas has been very helpful!
 
 #### Jonas:
 
@@ -182,7 +182,7 @@
 
 
 #### Francesco:
-
+No progress due to trip from Italy to Maastrict! The car broke down.
 
 #### Jonas:
 
