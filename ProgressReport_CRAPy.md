@@ -237,6 +237,7 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 #### Francesco:
 - I have been working on the second part in the creation of a web app, trying to form a quary. However, I have been stuck all day on the same problem, the storing table does not get recognised by the gueryTableBMP280.py programme and I can't figure out why!
+- Just menaged to make the query work, it was due to a spelling mistake!!!
 
 #### Jonas:
 
