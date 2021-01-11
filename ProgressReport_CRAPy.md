@@ -212,7 +212,8 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 
 #### Francesco:
-
+- Arrived in Maastricht late due to journey delay (broken car)
+- Menaged to set up another programme to log data automatically and have been working on a way to let the programme run continously but let it stop at a precise point, like once every single hour it should collect informations, feed them to the database and then stop, to start again in the next hour. Still need to define well how to do it.
 
 #### Jonas:
 - total day off :) (almost)
@@ -235,7 +236,7 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 
 #### Francesco:
-
+- I have been working on the second part in the creation of a web app, trying to form a quary. However, I have been stuck all day on the same problem, the storing table does not get recognised by the gueryTableBMP280.py programme and I can't figure out why!
 
 #### Jonas:
 
