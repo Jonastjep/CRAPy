@@ -246,7 +246,7 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 
 #### Marco:
-
+- succesfully downloaded and istalled the neccesary ROS onto a secondary raspberryPi to test if it worked. Did not. had to wipe the microSD and reinstall the software with little success. Now trying to retrace steps and redo all with extra attention to see if steps were overlooked. If the ROS and other software neccesary to run lidar on a raspberryPi can be succesfully downloaded in the following days then there should be no probelem implementing on actual rover. 
 
 #### Timon:
 
