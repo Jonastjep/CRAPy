@@ -240,7 +240,9 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 - Just menaged to make the query work, it was due to a spelling mistake!!!
 
 #### Jonas:
-
+- Printed more wheel parts in PLA and tested using PrusaSlicer instead of Cura: excellent results, I'm converted!
+- Reassembled the rover almost fully, the shafts are still a pain to install, but PETG seems promising. Some older parts look on the verge of collapse, but planning on tying to add some epoxy for structural integrity.
+- Helped a little bit around with Flask and the ROS installation, when needed.
 
 #### Juliette:
 
