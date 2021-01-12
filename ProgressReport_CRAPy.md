@@ -241,6 +241,8 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 #### Francesco:
 - I have been working on the second part in the creation of a web app, trying to form a quary. However, I have been stuck all day on the same problem, the storing table does not get recognised by the gueryTableBMP280.py programme and I can't figure out why!
 - Just menaged to make the query work, it was due to a spelling mistake!!!
+- Later I menaged to create a webserver and flask app where to display the data collected from the BMP280 sensor. I haven't uploaded the code because jonas has already a similar code onto git.
+- Discussed with jonas the possible next steps in the creation of a self driving autonamous rover, next steps involved working with Genetic AI for movement and with the communication between rover and us through radio waves. I had the idea to attach on part of the module (transmitter) on the rover and place the reciver onto a raspberry-pi which we connect to through wi-fi. Still need to figure out how to do it.
 
 #### Jonas:
 - Printed more wheel parts in PLA and tested using PrusaSlicer instead of Cura: excellent results, I'm converted!
@@ -265,7 +267,7 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 
 #### Francesco:
-
+- Investegated in the morning the uses of radiofrequency nrf24 module andobserved the SGVHAK_Rover git hub, from which we could take some inspiration (https://github.com/Roger-random/SGVHAK_Rover)
 
 #### Jonas:
 
