@@ -94,7 +94,7 @@
 
 #### Juliette:
 - Began Flask tutorial from the official website
-- Created first app with Flask that displays "Hello, world" when using the link of the ip adress.
+- Created basic "Hello, World" app with Flask
 
 #### Marco:
 - Fixed lidar environment.
@@ -129,7 +129,6 @@
 - Spent some time reflashing another RPi and updating it up. Issues with the headless connection through wifi but fixable.
 
 #### Juliette:
-- Trip back to Maastricht, delays in both flight and trains.
 - Continued tutorial for a longer app with Flask
 
 #### Marco:
@@ -178,7 +177,8 @@
 - continued the design process for the sensor mast, worked through two iterations each using a different design to move camera and optical equiptment. finalised the orientation of equiptment on the mast, as lidar needs a 360 degree unimpeded view whereas if camera and optical equiptment has small blindspots it is not a big issue (given that default position is unimpeded).
 
 #### Timon:
-
+- Develop and test new slicing profile for increased strength PETG parts
+- Start printing PETG replacement parts
 
 #### Sushant:
 
@@ -196,14 +196,13 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 - Also looked into making the cross-over. I (or someone else from the team) should probably continue the python implementation, as python has many more tools for these tasks. It's just nice that p5.js can be run on the browser.
 
 #### Juliette:
-- Database creation using sqlite. Used commands in shell to create a table, insert data, and retrieve the table to ensure proper functioning of code.
-- Learn to structure python scripts for database creation as well so commands don't need to be manually entered every time but instead it is better to just call in the python file with the commands included in it.
+
 
 #### Marco:
 - completed the design for the uper part sensor mast where optical sensors are located. now only need to design a secure method to fix bottom end of pvc pipe to rover body and sensor assembly will be complete. **visible in my branch if yous are curious**
 
 #### Timon:
-
+- Continued printing replacement parts
 
 #### Sushant:
 
@@ -221,14 +220,14 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 - total day off :) (almost)
 
 #### Juliette:
-- Researched possible sensors that we would be using (still need to know what sensors we have to research how they work)
-- Learned about DHT sensors and followed basic tutorials on it
+
 
 #### Marco:
 - nothing this was day off 
 
 #### Timon:
-
+- Continued printing replacement parts 
+- Enjoyed the weekend
 
 #### Sushant:
 
@@ -241,8 +240,6 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 #### Francesco:
 - I have been working on the second part in the creation of a web app, trying to form a quary. However, I have been stuck all day on the same problem, the storing table does not get recognised by the gueryTableBMP280.py programme and I can't figure out why!
 - Just menaged to make the query work, it was due to a spelling mistake!!!
-- Later I menaged to create a webserver and flask app where to display the data collected from the BMP280 sensor. I haven't uploaded the code because jonas has already a similar code onto git.
-- Discussed with jonas the possible next steps in the creation of a self driving autonamous rover, next steps involved working with Genetic AI for movement and with the communication between rover and us through radio waves. I had the idea to attach on part of the module (transmitter) on the rover and place the reciver onto a raspberry-pi which we connect to through wi-fi. Still need to figure out how to do it.
 
 #### Jonas:
 - Printed more wheel parts in PLA and tested using PrusaSlicer instead of Cura: excellent results, I'm converted!
@@ -250,13 +247,15 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 - Helped a little bit around with Flask and the ROS installation, when needed.
 
 #### Juliette:
-- Went over the GPS files in the github to understand what has been done and how (defining line by line how the python files are written, which also helps to learn python structure, the different functions, and what it is possible to do)
+
 
 #### Marco:
 - succesfully downloaded and istalled the neccesary ROS onto a secondary raspberryPi to test if it worked. Did not. had to wipe the microSD and reinstall the software with little success. Now trying to retrace steps and redo all with extra attention to see if steps were overlooked. If the ROS and other software neccesary to run lidar on a raspberryPi can be succesfully downloaded in the following days then there should be no probelem implementing on actual rover. 
 
 #### Timon:
-
+- Made the first few components for the arm in fusion 360
+- Transferred bearings from old to new parts and hammered them in
+- Assembled suspension and drivetrain related parts of the rover
 
 #### Sushant:
 
@@ -267,7 +266,7 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 
 #### Francesco:
-- Investegated in the morning the uses of radiofrequency nrf24 module andobserved the SGVHAK_Rover git hub, from which we could take some inspiration (https://github.com/Roger-random/SGVHAK_Rover)
+
 
 #### Jonas:
 
