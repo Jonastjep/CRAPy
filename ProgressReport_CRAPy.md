@@ -185,7 +185,8 @@
 
 ## Progress: Saturday 09 January, 2021
 
-#### Adjaye:
+#### Adjaye: 
+- Implemented the first version of the sample collection box into Fusion 360 that utilizes a slider crank to open and close the box.
 
 
 #### Francesco:
@@ -209,7 +210,9 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 ## Progress: Sunday 10 January, 2021
 
-#### Adjaye:
+#### Adjaye: 
+
+- Day off
 
 
 #### Francesco:
@@ -235,7 +238,7 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 ## Progress: Monday 11 January, 2021
 
 #### Adjaye:
-
+- Continuing to work on the sample box v1.
 
 #### Francesco:
 - I have been working on the second part in the creation of a web app, trying to form a quary. However, I have been stuck all day on the same problem, the storing table does not get recognised by the gueryTableBMP280.py programme and I can't figure out why!
