@@ -256,7 +256,8 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 - succesfully downloaded and istalled the neccesary ROS onto a secondary raspberryPi to test if it worked. Did not. had to wipe the microSD and reinstall the software with little success. Now trying to retrace steps and redo all with extra attention to see if steps were overlooked. If the ROS and other software neccesary to run lidar on a raspberryPi can be succesfully downloaded in the following days then there should be no probelem implementing on actual rover. 
 
 #### Timon:
-- Made the first few components for the arm in fusion 360
+- Made the bracket that attaches the arm to the chassis in fusion 360
+- made the motor mount for rotation of the arm in F360
 - Transferred bearings from old to new parts and hammered them in
 - Assembled suspension and drivetrain related parts of the rover
 
@@ -281,7 +282,10 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 
 #### Timon:
-
+- Discussed with Adjaye various ways of how the solar panel could be lifted (worm gear, regular gear reduction, linear actuator)
+- discussed more concretely what areas of the front of the rover are available for which mechanisms
+- Designed the base of the arm which holds the first link 
+- Started with the first link of the arm.
 
 #### Sushant:
 
