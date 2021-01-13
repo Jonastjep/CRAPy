@@ -273,7 +273,12 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 
 #### Jonas:
-
+- Started the prints for the camera and LiDAR attachement module, will probably have the module tomorrow
+- Managed to finally make the LiDAR work with Marco, what a pleasure to see the point cloud delimiting my room! I just helped debugging a little the commands needed for the setting up
+- Discussed sensor modules with Francesco and Juliette. Starting to figure out where we want to go, probably starting on the datacollection tomorrow or something. We'll see how well the nRF24 sensors work and how we can implement all this.
+- Managed to create a mapping inteface for GPS data. Works super nicely, just waiting to have implemented many more features than simply all data or query a certain amount of latest data (for example, give two dates, and map the travel between; also centralize the map on the tracks first point, still to do). Will probably make pull request tomorrow. Had issues with cached json files in browser, but found solution.
+- Wrote some demos for data conversion between CSV, SQLite database and JSON. Good for the people of the group interested.
+-Also this mapping is proof of concept of how we will make all of the interactive plots etc on the webapp: This worked fabulously and leaves us with alot of control. Need to discuss this with the others tomorrow.
 
 #### Juliette:
 
