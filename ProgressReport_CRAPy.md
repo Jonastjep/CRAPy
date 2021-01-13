@@ -313,7 +313,8 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 
 #### Marco:
-
+- wrote tutorial on how to set-up rasPi for lidar operation, starting from a new blank rasPi all the way to lidar operation. Visible under tutorials folder of master branch and titled Lidar_rPi_tutorial.md
+- worked on initial  3d printed parts of the sensor mast design to prepare them for assembly.
 
 #### Timon:
 
