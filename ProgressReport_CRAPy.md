@@ -319,7 +319,12 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 - worked on initial  3d printed parts of the sensor mast design to prepare them for assembly.
 
 #### Timon:
-
+- Improved the base of the arm and other parts so that the first link can rotate down as far as possible. This is so that the arm can be as short as possible to make it more lighweight and easier to lift for the motors
+- indentified broken hub parts that need to be replaced
+- retrieved heat inserts and screws from broken parts
+- searched together all screws neccesary for the wheel assembly
+- put heat inserts and screws into new parts
+- Partially assembled hubs and motors
 
 #### Sushant:
 
