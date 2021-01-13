@@ -304,7 +304,7 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 
 #### Francesco:
-
+- Have been working on the connection between raspberry pi and arduino using the radio frequencies. Following this tutorial https://medium.com/@anujdev11/communication-between-arduino-and-raspberry-pi-using-nrf24l01-818687f7f363
 
 #### Jonas:
 
