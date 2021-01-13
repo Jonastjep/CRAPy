@@ -284,6 +284,9 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 
 #### Marco:
+- lidar now working (mainly thanks to jonas for troubleshooting with me). required several reflashing of sd card until we chose to use a disk image with ROS kinetic alreadz installed with ubuntu 16. this allowed us to bypass several installation steps that were previously problematic. running codes to activate and perate lidar are as follows. `roslaunch ydlidar_ros_driver X4.launch` hen in another windown run `rviz` to open the ROS software. then within the ROS software `file>open confi>ubuntu>ydlidar_ws>src>ydlidar_ros_driver/launch/lidar.rviz` to get real time lidar info on screen. 
+	- looks cool and proves it works, does not yet actually create a map to then be stored. The next steps are as follows; implement SLAM to create a static point cloud that can then be exported to flask web app.this will alow the end user to view the map created by the rover in real time (hopefully). 
+	- should it all work then the actual rasPi used on the rover will need to be reflashed with disk image used on test rasPi. everything will need to be redone on the actual rasPi, for this first i will make a tutorial/log of everything we did to get the current rasPi working, not only to make replication easier but also to ensure future groups are able to use the LiDAR module if they want to.
 
 
 #### Timon:
