@@ -53,7 +53,7 @@ we can activate the lidar with
 ```bash
 $ roslaunch ydlidar_ros_driver X4.launch
 ```
-the lidar should now be making a big fuss and spinning. to view the data we must run RVIZ and open the correct config file. this is done by opening a new terminal tab and running the command `rviz` which will open the ROS and RVIZ software. Then to load the data click file >> open config >> ubuntu >> ydlidar_ws >> src >> ydlidar_ros_driver >> launch >> lidar.rviz . This will load thedata from the lidar and provide real time lidar info. 
+the lidar should now be making a big fuss and spinning. to view the data we must run RVIZ and open the correct config file. this is done by opening a new terminal tab and running the command `rviz` which will open the ROS and RVIZ software. Then to load the data click `file >> open config >> ubuntu >> ydlidar_ws >> src >> ydlidar_ros_driver >> launch >> lidar.rviz `. This will load thedata from the lidar and provide real time lidar info. 
 
 to stop the lidar, go back to the terminal tab where you ran the `$ roslaunch ydlidar_ros_driver X4.launch` command and click ctrl-C.
 
