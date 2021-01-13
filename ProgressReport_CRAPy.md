@@ -305,6 +305,8 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 #### Francesco:
 - Have been working on the connection between raspberry pi and arduino using the radio frequencies. Following this tutorial https://medium.com/@anujdev11/communication-between-arduino-and-raspberry-pi-using-nrf24l01-818687f7f363
+- The tutorial we were following didn't prove useful so we changed plan, with Juliette we will try to connect two arduinos, one attached to the rover's raspberry pi and one attached to the headquarters' raspberry pi.
+- With jonas and juliette we menaged to make two NRF24L01 communicate, one reciver and one transmitter, but we fail to have a clear connection where we have a message being recieved aaandaa a message being sent back, to confirm the message being recieved.
 
 #### Jonas:
 
