@@ -335,7 +335,7 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 
 #### Francesco:
-- Found this tutorial https://forum.arduino.cc/index.php?topic=387837.0 to conenct arduinos and send data. We are going to test the code and connection between our two NRF24L01 modules 
+- Found this tutorial https://forum.arduino.cc/index.php?topic=623796.0 to conenct arduinos and send data. We are going to test the code and connection between our two NRF24L01 modules 
 
 #### Jonas:
 
