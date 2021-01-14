@@ -1,8 +1,29 @@
-Tutorial on how to connect and operate lidar on Raspberry Pi.
+# Tutorial on how to connect and operate lidar on Raspberry Pi.
 
 The YDLidar X4 can be run on either Windows or Linux/Ubuntu. Originally we attempted to run it directly on Debian (based on Raspbian) but encountered errors after attempting to install the ros drivers onto the computer. Consequently, we chose to download a disk image for the RasPi that had Ubuntu 16 and ROS Kinetic installed. This was handy as it saved us the trouble of installing ROS Kinetic manually. This disk image is avaliable at `https://downloads.ubiquityrobotics.com/pi.html`, we used the `2020-11-07-ubiquity-xenial-lxde` version, but if this is not the newest one at the time you access it, the newest one should also work fine. Once the disk image is flashed (we used the Raspberry Pi Imager available on their website to do this), make sure to set it up with the instructions outlined on the Ubiquity Robots link. I will repeate it here in case it is no longer avaliable at time of access.
 
 On startup, the RasPi with the newly installed disk image will host and connect to its own wifi network called `ubiquityrobotXXXX` where the `XXXX` is part of the MAC address. The password for this wifi, by default is `robotseverywhere`. If you have an external monitor it is not neccesary to connect via SSH from a different computer, as everthing can be done directly on the monitor. However it may be beneficial to know how to do this anyway: Once the RasPi is booted up connect your secondary computer to the RasPis wifi network, open terminal and type `ssh ubuntu@10.42.0.1`. This obviously assumes that you have SSH set up on your computer. As default, the password is `ubuntu`, you will have to enter this before you are connected to the RasPi.
+
+When logging in for the first time on a new flashed OS, it's always a good idea to upgrade the software before doing anything else, particularly if your next plans have heavy requirements. This is done with 
+
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+```
+##### Updating the keyboard and locale
+We are using a German keyboard, so we will see here how to change it from the default US and updating the locale configuration (which control the text language etc of the OS, [see here for more](https://docs.oracle.com/cd/E19455-01/806-0169/6j9hsml2f/index.html)) as they don't seem to be setup correctly on the default image. First the keyboard layout can be set using `sudo dpkg-reconfigure keyboard-configuration`. You can then choose all of the right settings for your specific keyboard.
+
+The next step is to setup the locale, without which you won't be able to use pip with python (for example) and will ruin many other settings you want to do. The commands to do are 
+
+```bash
+export LC_ALL=en_US.UTF-8
+sudo locale-gen en_US.UTF-8
+sudo dpkg-reconfigure locales
+```
+
+This should in principle fix all of those. A good test, that will then later become useful for the general project, is to remove the original GPIO pin control (as it's also not working for some reason, by running `sudo apt remove rpi.gpio`. This will completely remove it from the system and then you can reinstall it specifically for the python versions using pip: `pip3 install RPi.GPIO`. This should run without an error and you should then be able to go into the python interpreter and test `import RPi.GPIO`, which should now run without errors, contrarily to earlier.
+
+##### Installing YDLidar-SDK
 
 The RasPi disk image with Ubuntu 16 and ROS should be up and running. Now we have to install the drivers specific to the YDLidar X4. The general procedure is outlined in the YDLidar X4 user manual available at `https://www.ydlidar.com/Public/upload/files/2020-04-13/YDLIDAR-X4-USER%20Manual.pdf` but we will again list the procedure here in case itis not available. 
 
