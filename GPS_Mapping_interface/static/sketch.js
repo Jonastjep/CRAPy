@@ -9,7 +9,7 @@ const options = {
   lat: 50.84736613,
   lng: 5.70299142,
   zoom: 15,
-  style: 'http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'
+  style: 'http://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png'
 }
 
 function preload(){
@@ -31,7 +31,7 @@ function setup(){
 function draw(){
   clear()
   noStroke()
-  fill(255)
+  fill(0)
 
   for (var i = 0; i < coordinates.coordinates.length; i++) {
     let pos = myMap.latLngToPixel(coordinates.coordinates[i][0], coordinates.coordinates[i][1])
