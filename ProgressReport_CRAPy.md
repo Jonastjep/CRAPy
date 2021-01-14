@@ -336,6 +336,7 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 #### Francesco:
 - Found this tutorial https://forum.arduino.cc/index.php?topic=623796.0 to conenct arduinos and send data. We are going to test the code and connection between our two NRF24L01 modules 
+- With Juliette we menaged to make two antennas nRF24L01 communicate at long distance, sending messages and receving them. The confirmation of having recieved the message doesn't work from reciver to transmitter. Next step is to make that work, so that we can have the rover confirming a message has been recieved or sent. N.B. This was difficult (jonas agrees)
 
 #### Jonas:
 
