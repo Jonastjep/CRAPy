@@ -20,6 +20,7 @@ $ sudo make install
 ```
 If this worked, the ROS driver can be installed. However before doing so, you will have download the ROS driver from github, create a catkin workspace for the ydlidar, move the ROS driver into the workspace and then compile the workspace. This can be done with the following commands. it may be beneficial to use the `ls` command to check the move was correctly exectuted before moving onto the compilation
 ```bash
+$ cd ~
 $ git clone https://github.com/YDLIDAR/ydlidar_ros_driver
 $ mkdir -p ~/ydlidar_ws/src
 $ mv /ydlidar_ros_driver /ydlidar_ws/src/
