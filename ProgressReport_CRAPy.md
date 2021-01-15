@@ -368,6 +368,7 @@ FINALLY 10 WHEELS THAT DON´T SLIP!!!
 
 #### Francesco:
 - With Juliette we have been trying to send the data directly from the arduino to the other through he nRF24L01 module underthe form of strings. This tutorial might be useful https://forum.arduino.cc/index.php?topic=436525.0. We should also start to think about the way to send a serial communication from the sensors to the raspberry pi and form a database there. But this is for future moment.
+- We gave up on sending data between the two nRF24L01 modules because the connection is too unstable and continously brakes, which also makes it very difficult to test the code and the way in which data are sent. NOTE on future improvements: use more powerful antennas and to try to have a more stable connection
 
 #### Jonas:
 
