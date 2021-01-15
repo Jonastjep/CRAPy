@@ -349,7 +349,14 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 
 #### Timon:
-
+- Realize that a few more hubs are broken
+- Harvest heat inserts from old hubs and put into new hubs
+- Shorten axles that were too long, using a plastic bag in the process
+- mount wheel carriers onto the suspension assembly
+- attach all 10 motors, by numbers to each position
+- shorten screws because there weren´t enough of the right size
+- attach wheels
+FINALLY 10 WHEELS THAT DON´T SLIP!!! 
 
 #### Sushant:
 
