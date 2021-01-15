@@ -360,7 +360,7 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 
 #### Francesco:
-
+- With Juliette we have been trying to send the data directly from the arduino to the other through he nRF24L01 module underthe form of strings. This tutorial might be useful https://forum.arduino.cc/index.php?topic=436525.0. We should also start to think about the way to send a serial communication from the sensors to the raspberry pi and form a database there. But this is for future moment.
 
 #### Jonas:
 
