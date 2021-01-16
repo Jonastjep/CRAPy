@@ -391,8 +391,8 @@ FINALLY 10 WHEELS THAT DON´T SLIP!!!
 
 
 #### Francesco:
-
-
+- Have been working on two main things, the first one is to find a way to transform the data from the arduino into a json format to be sent over to the raspberry pi. The other is the creation of a programme to recive the data on the raspberry pi and serial it into different variables to store in arrays which will then be used to form sqlite database. I have menaged to get a bit further on this part, mainly due to the fact that today I didn't have any access to the arduino, so it was difficult to test the code.
+- I still have to understand better how to sort out the data for the serial communication, but once that is done, the next step is create a flask app and display all the data collected into the sqlite database.
 #### Jonas:
 
 
