@@ -94,7 +94,7 @@
 
 #### Juliette:
 - Began Flask tutorial from the official website
-- Created basic "Hello, World" app with Flask
+- Created first app with Flask that displays "Hello, world" when using the link of the ip adress.
 
 #### Marco:
 - Fixed lidar environment.
@@ -130,6 +130,7 @@
 
 #### Juliette:
 - Continued tutorial for a longer app with Flask
+- Trip back to Maastricht, delays in both flight and trains.
 
 #### Marco:
 - partially installed the neccesary ROS software needed to operate lidar (still proving to be tricky)
@@ -197,7 +198,8 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 - Also looked into making the cross-over. I (or someone else from the team) should probably continue the python implementation, as python has many more tools for these tasks. It's just nice that p5.js can be run on the browser.
 
 #### Juliette:
-
+- Database creation using sqlite. Used commands in shell to create a table, insert data, and retrieve the table to ensure proper functioning of code.
+- Learn to structure python scripts for database creation as well so commands don't need to be manually entered every time but instead it is better to just call in the python file with the commands included in it.
 
 #### Marco:
 - completed the design for the uper part sensor mast where optical sensors are located. now only need to design a secure method to fix bottom end of pvc pipe to rover body and sensor assembly will be complete. **visible in my branch if yous are curious**
@@ -223,7 +225,8 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 - total day off :) (almost)
 
 #### Juliette:
-
+- Researched possible sensors that we would be using (still need to know what sensors we have to research how they work)
+- Learned about DHT sensors and followed basic tutorials on it
 
 #### Marco:
 - nothing this was day off 
@@ -250,7 +253,8 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 - Helped a little bit around with Flask and the ROS installation, when needed.
 
 #### Juliette:
-
+- Went over the GPS files in the github to understand what has been done and how (defining line by line how the python files are written, which also helps to learn python structure, the different functions, and what it is possible to do)
+- Attempted to work with pressure/temp sensor to create database using sqlite (not quite successful yet)
 
 #### Marco:
 - succesfully downloaded and istalled the neccesary ROS onto a secondary raspberryPi to test if it worked. Did not. had to wipe the microSD and reinstall the software with little success. Now trying to retrace steps and redo all with extra attention to see if steps were overlooked. If the ROS and other software neccesary to run lidar on a raspberryPi can be succesfully downloaded in the following days then there should be no probelem implementing on actual rover. 
@@ -281,7 +285,9 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 -Also this mapping is proof of concept of how we will make all of the interactive plots etc on the webapp: This worked fabulously and leaves us with alot of control. Need to discuss this with the others tomorrow.
 
 #### Juliette:
-
+- Discussed sensors with Jonas and Francesco to figure out a plan (how to implement them together)
+- Attempted with Francesco to establish communication between Arduino and Raspberry pi through rnf24l01 transceivers (searched for standard connection mappings between sensors and raspberry pi) - Had issues making this work.
+- Found a tutorial for nrf24l01 communication from Arduino to Arduino (instead of Arduino to Raspberrypi) https://lastminuteengineers.com/nrf24l01-arduino-wireless-communication/ (will run this on wednesday with Francesco)
 
 #### Marco:
 - lidar now working (mainly thanks to jonas for troubleshooting with me). required several reflashing of sd card until we chose to use a disk image with ROS kinetic alreadz installed with ubuntu 16. this allowed us to bypass several installation steps that were previously problematic. running codes to activate and perate lidar are as follows. `roslaunch ydlidar_ros_driver X4.launch` hen in another windown run `rviz` to open the ROS software. then within the ROS software `file>open confi>ubuntu>ydlidar_ws>src>ydlidar_ros_driver/launch/lidar.rviz` to get real time lidar info on screen. 
@@ -312,7 +318,9 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 
 #### Juliette:
-
+- Worked with Francesco on nrf24l01 communication. Attempted again to follow a tutorial between Raspberry pi and Arduino (see Francesco's report for link) but it was unsuccesful. Decided to stick with Arduino to Arduino wireless communication.
+- With the help of Jonas, Francesco and I finally made the two nrf24l01 communicate, following a simple code for two-way transmission (one code for the transmitter and one for the receiver) https://forum.arduino.cc/index.php?topic=421081
+- Problems receiving an acknowledgement message back from the receiver so transmitter cannot confirm message has been successfully received.
 
 #### Marco:
 - wrote tutorial on how to set-up rasPi for lidar operation, starting from a new blank rasPi all the way to lidar operation. Visible under tutorials folder of master branch and titled Lidar_rPi_tutorial.md
@@ -343,7 +351,11 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 
 #### Juliette:
-
+- Working with Francesco, still trying to make the nrf24l01 sensors work.
+- Researching how to send data from sensors through transceivers.
+- nrf24l01 worked!! at "long" distance! Acknowledgement message still missing, need to review code and find where it fails to send confirmation receipt.
+- Managed to get 7 confirmation messages from the receiver! Possible problems with connections
+- Placed a few screws here and there in the rover
 
 #### Marco:
 
@@ -374,7 +386,17 @@ FINALLY 10 WHEELS THAT DON´T SLIP!!!
 
 
 #### Juliette:
-
+- Spent first hours working with each sensor (separately) to obtain individual codes as well as proper cable connections for each (that way we can be sure we can make them all work properly. Did this for mq2-gas sensor | hcsro4-ultra sound sensor | dht11 - temperature and humidity sensor)
+- Worked on combining code of nrf24l01 transmitter sensor with one of the individual scripts (chose hcsro4 - ultra sound sensor for this because it was the one working best)
+- Assembled the arduino connection with the two sensos (nrf24l01-transmitter and hcsro4)
+- Ran into problems compiling the script due to type mismatch between the needed type for the transmitter (String) and the one established in the sensor (long)
+- Worked with Francesco finding tutorials to send sensor data from one Arduino to the other as Strings
+- With the help of jonas we used .concate() to adhere the data into a string, this solved the compiling problem
+- Uploaded the script and attempted to send sensor data over the transceivers. The receiver did not get any message at all. Printed values in the code to make sure the data variable was indeed containing the data received from the ultra sound sensor, this was correct. 
+- Attempted to run simple code again (which had work the day before and had even sent acknowledgement receipts). This connection failed as well. Thus, the problem was deemed to be within the connection of the trasnceivers. Gave up on sending data between the nrf24l01 modules.
+- Focused on producing a combined code by adding one more sensor (the mq2- gas sensor)
+- Managed to compile a code containing all the info for the nrf24l01 transmitter, the hcsro4 ultra sound sensor, and the mq2 gas sensor.
+- Made all connection to the arduino, uploaded the script, ran it. Successful retrieval of data.
 
 #### Marco:
 
