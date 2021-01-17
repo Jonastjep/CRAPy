@@ -419,7 +419,8 @@ FINALLY 10 WHEELS THAT DON´T SLIP!!!
 
 
 #### Juliette:
-
+- Looked into JSON structure in arduino to send organized data from the code of the arduino to the Raspberry pi
+- Cleaned up a bit the combined code of the arduino
 
 #### Marco:
 
@@ -442,7 +443,10 @@ FINALLY 10 WHEELS THAT DON´T SLIP!!!
 
 
 #### Juliette:
-
+- Added dht11 sensor to the combined code in the arduino. (Now this code has nrf24l01, hcsro4, mq2, and dht11 implemented - Compiled successfully).
+- Organized data in a variable that separates values with a ",". Need to figure out how to implement json structure. 
+- Error when running as the data for dht11 sensor returns 0 and 0 for temperature and humidity.
+- Ran sensor individually with script done on friday, it works. Currently trying to find the issue within the combined code as the logic and commands are the same as the individual script. 
 
 #### Marco:
 
