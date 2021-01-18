@@ -402,6 +402,7 @@ FINALLY 10 WHEELS THAT DON´T SLIP!!!
 
 
 #### Timon:
+- experiment with rubber bands to determine what extensions they should operate at and what force they are able to provide
 - Designed first link of the robotic arm
 
 
