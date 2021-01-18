@@ -437,7 +437,10 @@ FINALLY 10 WHEELS THAT DON´T SLIP!!!
 
 
 #### Francesco:
-
+- Scratched off part of yesterday's work because json is needed after the data has been stored in sqlite, not before. Menaged to write a code that takes the data from serial of arduino, stores them into a sqlite database.
+- Through another programme I convert the sqlite data into the json type data, which will be then used in the flask app that I am currently writing.
+- All these programs still need to be tested, but the main part of that will be simply trubleshooting
+- We will also need to start to write a programme for the arm and the light sensors.
 
 #### Jonas:
 
