@@ -451,7 +451,7 @@ FINALLY 10 WHEELS THAT DON´T SLIP!!!
 - Added dht11 sensor to the combined code in the arduino. (Now this code has nrf24l01, hcsro4, mq2, and dht11 implemented - Compiled successfully).
 - Organized data in a variable that separates values with a ",". Need to figure out how to implement json structure. (jonas explained, json not needed from Arduino).
 - Error when running as the data for dht11 sensor returns 0 and 0 for temperature and humidity.
-- Ran sensor individually with script done on friday, it works. Currently trying to find the issue within the combined code as the logic and commands are the same as the individual script. 
+- Ran sensor individually with script done on friday, it works. Currently trying to find the issue within the combined code as the logic and commands are the same.
 
 #### Marco:
 
@@ -477,7 +477,15 @@ FINALLY 10 WHEELS THAT DON´T SLIP!!!
 
 
 #### Juliette:
-
+- Found issue with dht11 sensor, fixed code (was missing a read command before retrieving the data). 
+- Now working with bmp280 sensor. Having issues running examples and actually, any code ("sensor not detected").
+- Problem solved with the help of Jonas: Edited library, used the SPI protocol instead of I2C, and added .begin() command. 
+Now implemented individual script into combined code. 
+- All 5 sensors (nrf24l01, hcsro4, mq2, dht11, and bmp280) are now in the script :) Everything runs correctly!
+- Organized the data (small details such as no spaces, different headers, proper separators)
+- Placed the connections in the Arduino Mega taking into account future needed pins (bmp280 changed to I2C since SPI is needed for nrf24l01).
+- Need to add GPS sensor now. Running individual script, I get responses but no data. Might be due to our positioning not getting any data from satellites.
+- Soldered cables, added some heat inserts, and used a hammer for apparently the first time!?
 
 #### Marco:
 
