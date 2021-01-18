@@ -315,7 +315,10 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 - With jonas and juliette we menaged to make two NRF24L01 communicate, one reciver and one transmitter, but we fail to have a clear connection where we have a message being recieved aaandaa a message being sent back, to confirm the message being recieved.
 
 #### Jonas:
-
+- Worked on guiding Juliette and Francesco on the nRF24L01 modules that are very tricky to use due to their sensitivity.
+- Started dome soldering work, some rover reconstruction (helping Timon).
+- Added the RC car personal project to the Tutorials folder for examples of how to use nRF24.
+- Improved some of the written scripts
 
 #### Juliette:
 - Worked with Francesco on nrf24l01 communication. Attempted again to follow a tutorial between Raspberry pi and Arduino (see Francesco's report for link) but it was unsuccesful. Decided to stick with Arduino to Arduino wireless communication.
@@ -348,7 +351,7 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 - We menaged to get the reciver to send a confirmation signal to the transmitter. The problem wasn't the code but rather the connection and the equipment we were using, probaby in relation to the cables and the way in which they connect
 
 #### Jonas:
-
+- 
 
 #### Juliette:
 - Working with Francesco, still trying to make the nrf24l01 sensors work.
@@ -383,7 +386,7 @@ FINALLY 10 WHEELS THAT DON´T SLIP!!!
 - We gave up on sending data between the two nRF24L01 modules because the connection is too unstable and continously brakes, which also makes it very difficult to test the code and the way in which data are sent. NOTE on future improvements: use more powerful antennas and to try to have a more stable connection
 
 #### Jonas:
-
+- Resoldered the whole base connection of the rover, switching to 18 gauge wire to handre more current. Also resoldered XT60 connectors to the battery (This was absolutely terrible). And just generally worked on the rovers physical aspects. Everything works, now need to create all the servo cable cuttings and we'll have an operational rover
 
 #### Juliette:
 - Spent first hours working with each sensor (separately) to obtain individual codes as well as proper cable connections for each (that way we can be sure we can make them all work properly. Did this for mq2-gas sensor | hcsro4-ultra sound sensor | dht11 - temperature and humidity sensor)
@@ -416,7 +419,7 @@ FINALLY 10 WHEELS THAT DON´T SLIP!!!
 - Have been working on two main things, the first one is to find a way to transform the data from the arduino into a json format to be sent over to the raspberry pi. The other is the creation of a programme to recive the data on the raspberry pi and serial it into different variables to store in arrays which will then be used to form sqlite database. I have menaged to get a bit further on this part, mainly due to the fact that today I didn't have any access to the arduino, so it was difficult to test the code.
 - I still have to understand better how to sort out the data for the serial communication, but once that is done, the next step is create a flask app and display all the data collected into the sqlite database.
 #### Jonas:
-
+- Nothing much on this day
 
 #### Juliette:
 - Looked into JSON structure in arduino to send organized data from the code of the arduino to the Raspberry pi
@@ -443,7 +446,8 @@ FINALLY 10 WHEELS THAT DON´T SLIP!!!
 - We will also need to start to write a programme for the arm and the light sensors.
 
 #### Jonas:
-
+- Started the printing of the camera mocule tube holder designed by Marco and two of the suspention parts. Unfortunately just realized that I'm printing in PLA instead of PETG, so we'll see how well it holds.
+- Managed to create the bicubic interpolation for the thermal camera, augmenting the pixels from 8x8 to 64x64. Now need to figure out how to create websockets on Flask instead of using the websockets library.
 
 #### Juliette:
 - Added dht11 sensor to the combined code in the arduino. (Now this code has nrf24l01, hcsro4, mq2, and dht11 implemented - Compiled successfully).
