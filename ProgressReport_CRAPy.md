@@ -492,7 +492,7 @@ Now implemented individual script into combined code.
 
 #### Timon:
 - designing second link of the robotic arm
-
+- printing more parts of the arm
 #### Sushant:
 
 
@@ -514,8 +514,8 @@ Now implemented individual script into combined code.
 
 
 #### Timon:
-
-
+-take all parts and assemble to a working arm! (longer than expected)
+- print more hubs that don´t break (more perimeters jonas!)
 #### Sushant:
 
 
@@ -537,7 +537,8 @@ Now implemented individual script into combined code.
 
 
 #### Timon:
-
+- Construct part that pitches and rotates the toolhead
+- adapt the grabber
 
 #### Sushant:
 
