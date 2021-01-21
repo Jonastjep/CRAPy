@@ -541,6 +541,9 @@ Now implemented individual script into combined code.
 #### Timon:
 - Construct part that pitches and rotates the toolhead
 - adapt the grabber
+- print grabber
+- steal jonas´s measurements and make an alternative model of his desing without consent :P
+- start printing pieces to hold solar panel
 
 #### Sushant:
 
@@ -563,6 +566,9 @@ Now implemented individual script into combined code.
 
 
 #### Timon:
+- Assemble grabber as far as possible without motors
+- break holder for solar panel
+- make new design for solar panel holder
 
 
 #### Sushant:
