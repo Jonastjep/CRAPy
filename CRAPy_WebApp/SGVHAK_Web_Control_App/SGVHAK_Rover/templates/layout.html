@@ -1,0 +1,68 @@
+<!--
+MIT License
+
+Copyright (c) 2018 Roger Cheng
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<!doctype html>
+<head>
+  <title>{{page_title}} | SGVHAK Rover</title>
+  <meta charset="utf-8" />
+  <!-- Materialize: Compiled and minified CSS -->
+  <link rel="stylesheet" type="text/css" href=".{{url_for('static', filename='libraries/materialize/css/materialize.min.css')}}">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" type="text/css" href=".{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src=".{{url_for('static', filename='libraries/jquery-3.3.1.min.js')}}"></script>
+  <!-- Materialize: Compiled and minified JavaScript -->
+  <script type="text/javascript" src=".{{url_for('static', filename='libraries/materialize/js/materialize.min.js')}}"></script>
+
+  <script type="text/javascript">
+  {% for category, message in get_flashed_messages(with_categories=true) %}
+    Materialize.toast('{{message}}', 4000, 'flash {{category}}')
+  {% endfor %}
+  </script>
+  <nav class="nav-extended blue darken-4">
+    <div class="nav-wrapper valign-wrapper">
+      <div class="container">
+        <div class="row">
+
+          <div class="col s4">
+            <a class="waves-effect waves-light btn blue darken-3 left" href="/">SGVHAK Rover</a>
+          </div>
+
+          <div class="col s4">
+            <h6 class="center">{{page_title}}</h6>
+          </div>
+
+          <div class="col s4">
+            <a class="waves-effect waves-light btn red darken-4 right" href="{{url_for('stop_motors')}}">Stop Motors</a>
+          </div>
+
+        </div><!-- row -->
+      </div><!-- container -->
+    </div><!-- nav-wrapper -->
+  </nav>
+  {% block body %}{% endblock %}
+</body>

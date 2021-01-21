@@ -1,0 +1,85 @@
+<!--
+MIT License
+
+Copyright (c) 2018 Roger Cheng
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+{% extends "layout.html" %}
+{% block body %}
+<script type="text/javascript" src="{{url_for('static', filename='chassis_config.js')}}"></script>
+<input type="hidden" id="request_wheel_status" value="{{url_for('request_wheel_status')}}" />
+<div class="container">
+{% for wheelTableRow in wheelTable.values() %}
+<div class="row">
+{% for wheelTableColumn in wheelTableRow.values() %}
+{% for wheel in wheelTableColumn %}
+  <div class="col s6 m4 {{wheelOffset[wheel.name]}}">
+    <div class="blue lighten-4">
+      <div class="row">
+        <div class="col s4">
+          <canvas id="canvas_{{wheel.name}}" width="100" height="100">
+          </canvas>
+        </div>
+        <div class="col s8">
+          <p>
+            <span class="sub-head">{{wheel['name']}}</span>:
+            ({{wheel['x']}},{{wheel['y']}})
+          </p>
+          <p>
+          <span class="sub-head">Rolling:</span>
+          {% if wheel.rollingparam == None %}
+          Freewheel
+          {% else %}
+            M{{wheel.rollingparam[1]}}@{{wheel.rollingparam[0]}}
+            {% if wheel.rollingparam[2] == True %}
+              (Inverted)
+            {% endif %}
+            <span class="hide-on-small-only">
+              {{wheel.rollinglabel}}
+            </span>
+          </p>
+          {% endif %}
+          <p>
+            <span class="sub-head">Steering:</span>
+            {% if wheel.steeringparam == None %}
+              Fixed
+            {% else %}
+              M{{wheel.steeringparam[1]}}@{{wheel.steeringparam[0]}}
+              {% if wheel.steeringparam[2] == True %}
+                (Inverted)
+              {% endif %}
+            <span class="hide-on-small-only">
+                {{wheel.steeringlabel}}
+            </span>
+            {% endif %}
+          </p>
+        </div>
+      </div><!-- row -->
+    </div>  <!-- blue -->
+  </div><!-- col s6 m4 -->
+{% endfor %}
+{% endfor %}
+</div><!--row -->
+{% endfor %}
+<div class="row">
+  {{local_ip}}
+</div>
+</div><!-- container -->
+{% endblock %}

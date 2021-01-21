@@ -1,0 +1,17 @@
+pip3 install scipy
+
+pip3 install numpy
+-> sudo apt-get install libatlas-base-dev
+
+pip3 install matplotlib plotly
+pip3 install opencv-python
+pip3 install imutils
+pip3 install websockets
+
+pip3 install adafruit-blinka
+pip3 install Adafruit_AMG88xx
+
+NOT
+pip3 install adafruit-circuitpython-amg88xx
+
+

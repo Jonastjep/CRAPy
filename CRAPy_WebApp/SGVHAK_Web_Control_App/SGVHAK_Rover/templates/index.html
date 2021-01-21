@@ -1,0 +1,49 @@
+<!--
+MIT License
+
+Copyright (c) 2018 Roger Cheng
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+  <div class="row">
+    <a class="waves-effect waves-light btn col offset-s1 s10 blue" href="{{url_for('drive')}}">Drive via Polar (Round) Pad</a>
+  </div>
+  <div class="row">
+    <a class="waves-effect waves-light btn col offset-s1 s10 blue" href="{{url_for('drive_cartesian')}}">Drive via Cartesian (Rectangular) Pad</a>
+  </div>
+  <div class="row">
+    <a class="waves-effect waves-light btn col offset-s1 s10 blue" href="{{url_for('drive_command')}}">Drive by Angle/Velocity Command</a>
+  </div>
+  <div class="row">
+    <a class="waves-effect waves-light btn col offset-s1 s10 blue" href="{{url_for('chassis_config')}}">Chassis Configuraton</a>
+  </div>
+  <div class="row">
+    <a class="waves-effect waves-light btn col offset-s1 s10 blue" href="{{url_for('steering_trim')}}">Steering Trim</a>
+  </div>
+  <div class="row">
+    <a class="waves-effect waves-light btn col offset-s1 s10 blue" href="{{url_for('input_voltage')}}">Motor Input Voltages</a>
+  </div>
+  <div class="row">
+    <a class="waves-effect waves-light btn col offset-s1 s10 blue" href="{{url_for('system_power')}}">Shutdown/Reboot</a>
+  </div>
+</div>
+{% endblock %}
