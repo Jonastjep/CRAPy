@@ -471,7 +471,8 @@ FINALLY 10 WHEELS THAT DON´T SLIP!!!
 
 
 #### Francesco:
-
+- Created the first part of the web app and tested it with a randomly populated set of data. Passed on the whole day trouble shooting, the code is very big.
+- Worked with Chart.js and revisioned how to make graphs
 
 #### Jonas:
 
@@ -502,7 +503,7 @@ Now implemented individual script into combined code.
 
 
 #### Francesco:
-
+- Continued with yesterday's trouble shooting and have been working on some ideas for the video
 
 #### Jonas:
 
@@ -525,7 +526,8 @@ Now implemented individual script into combined code.
 
 
 #### Francesco:
-
+- Adapted the web app code with the Arduino code from Juliette. I have also created two databases to store data from the GPS in one, and data from the sensor in the other.
+- Also began to write the script for the video
 
 #### Jonas:
 
@@ -549,7 +551,7 @@ Now implemented individual script into combined code.
 
 
 #### Francesco:
-
+- Finished the script for the video this morning. I am waiting for a reply from the members of the team.
 
 #### Jonas:
 
