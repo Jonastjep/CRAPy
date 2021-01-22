@@ -576,7 +576,10 @@ Terrible weather might be making the connection to satellites difficult.
 - Assemble grabber as far as possible without motors
 - break holder for solar panel
 - make new design for solar panel holder
-
+- test motors (they move)
+- print new solar panel holders
+- print knuckles wrong (not mirrored)
+- print rotating thingy
 
 #### Sushant:
 
@@ -599,7 +602,10 @@ Terrible weather might be making the connection to satellites difficult.
 
 
 #### Timon:
-
+- adapt code to have 6 servos
+- convert code such that settings are done and displayed in degree
+- adapt script 
+- be happy
 
 #### Sushant:
 
