@@ -509,13 +509,16 @@ Now implemented individual script into combined code.
 
 
 #### Juliette:
-
+- Attempted to make GPS work. Errors in connections -> "Check wiring". It doesnt recognize the module in the program.
+- Note: Tx and Rx connections are inverted to arduino!!
+- Examples not running properly
+- Using GPS code from github returns empty data (but at least sensor is running now). Implemented code into combined script.
 
 #### Marco:
 
 
 #### Timon:
--take all parts and assemble to a working arm! (longer than expected)
+- take all parts and assemble to a working arm! (longer than expected)
 - print more hubs that don´t break (more perimeters jonas!)
 #### Sushant:
 
@@ -533,7 +536,8 @@ Now implemented individual script into combined code.
 
 
 #### Juliette:
-
+- Starting box design for sensors, taking measurements.
+- Need to add more ultrasound sensors to code!
 
 #### Marco:
 
@@ -560,7 +564,9 @@ Now implemented individual script into combined code.
 
 
 #### Juliette:
-
+- Finished box design. Need to check measurements are proper, design is feasible and efficient. Then need to print.
+- Added 4 ultrasound sensors to the code (quite lengthy, might be optimzed).
+- Noticed that the sensors dont detect me standing in front but it does detect a box - or my hand - so.
 
 #### Marco:
 
