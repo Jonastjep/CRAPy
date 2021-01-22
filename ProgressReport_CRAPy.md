@@ -513,6 +513,7 @@ Now implemented individual script into combined code.
 - Note: Tx and Rx connections are inverted to arduino!!
 - Examples not running properly
 - Using GPS code from github returns empty data (but at least sensor is running now). Implemented code into combined script.
+Terrible weather might be making the connection to satellites difficult.
 
 #### Marco:
 
