@@ -1,16 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-<meta content="utf-8" http-equiv="encoding">
-
-  <title>RoboArm</title>
-
-</head>
-
-<body>
-    <h2> CRAPy Video Stream</h2>
-        <form method="POST" action="/send" id="form">
+{% extends "base.html" %}
+{% block title %}Stream{% endblock %}
+{% block content %}
+    <h2> CRAPy Robotic Arm Control </h2>
+        <form method="POST" action="/roboArm_send" id="form">
             <p>Rotation <input type="range" min="0" max="270" name="Rotation" id="myRange1" value={{lastval1}}> </p>
             <p>Angle: <span id="ival1"></span></p><br>
 
@@ -29,9 +21,7 @@
             <p>Gripper <input type="range" min="0" max="180" name="Gripper" id="myRange6" value={{lastval6}}> </p>
             <p>Angle: <span id="ival6"></span></p><br>
 
-            <input type="submit" value="submit">
         </form>
 
-    <script src="{{url_for('.static', filename='slider.js')}}"></script>
-</body>
-</html>
+    <script src="{{url_for('.static', filename='roboarm_sliders.js')}}"></script>
+{% endblock %}

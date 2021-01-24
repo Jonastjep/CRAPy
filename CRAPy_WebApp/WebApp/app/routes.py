@@ -1,4 +1,5 @@
 from app import app, p, p1, vs, outputFrame, lock
+from app import prot,pa1, pa2, proll, ppitch, pgrip
 from flask import Flask, Response, render_template, request, flash, redirect, url_for, json
 
 
@@ -121,6 +122,57 @@ def map_form():
     #This creates the json file that the script will use when rendered
     sqliteToJson("app/static/", "app/GPS_data.db",numSamples)
     return render_template('gps.html')
+
+########################### ROBOTIC ARM ######################################
+
+@app.route("/roboArm")
+def roboArm():
+    Rotation = 8
+    Arm_1 = 8
+    Arm_2 = 8
+    Roll = 8
+    Pitch = 8
+    Gripper = 8
+
+    return render_template('roboarm.html', lastval1=Rotation, lastval2=Arm_1, lastval3=Arm_2, lastval4=Roll, lastval5=Pitch, lastval6=Gripper )
+
+@app.route("/roboArm_send", methods=["POST"])
+def armSend():
+    # Get slider Values
+    val1 = request.form["Rotation"]
+    val2 = request.form["Arm_1"]
+    val3 = request.form["Arm_2"]
+    val4 = request.form["Roll"]
+    val5 = request.form["Pitch"]
+    val6 = request.form["Gripper"]
+    
+    #Renormalize values from 2-15.5 to degree
+    nval1 = float(val1)*10.5/270+2
+    nval2 = float(val2)*10.5/270+2
+    nval3 = float(val3)*10.5/270+2
+    nval4 = float(val4)*10.5/270+2
+    nval5 = float(val5)*10.5/270+2
+    nval6 = float(val6)*10.5/270+2
+    
+    # Change duty cycle
+    prot.ChangeDutyCycle(float(nval1))
+    pa1.ChangeDutyCycle(float(nval2))
+    pa2.ChangeDutyCycle(float(nval3))
+    proll.ChangeDutyCycle(float(nval4))
+    ppitch.ChangeDutyCycle(float(nval5))
+    pgrip.ChangeDutyCycle(float(nval6))
+    
+    # Give servo some time to move
+    sleep(1)
+    # Pause the servo
+    prot.ChangeDutyCycle(0)
+    pa1.ChangeDutyCycle(0)
+    pa2.ChangeDutyCycle(0)
+    proll.ChangeDutyCycle(0)
+    ppitch.ChangeDutyCycle(0)
+    pgrip.ChangeDutyCycle(0)
+    return render_template('roboarm.html', lastval1=val1, lastval2=val2, lastval3=val3, lastval4=val4, lastval5=val5, lastval6=val6)
+
 
 ########################### CONTROL SGVHAK ###################################
 
