@@ -657,7 +657,7 @@ Terrible weather might be making the connection to satellites difficult.
 #### Timon:
 - adapt script of what I say. 
 - get articles for the report
-- work (the thing where you do something and get money)
+-work
 
 
 #### Sushant:
@@ -683,7 +683,11 @@ Terrible weather might be making the connection to satellites difficult.
 #### Timon:
 - wire up rover (ORganize cables wth zip ties, solder connections, put connections in the rover NICELY!)
 - Red-> grabber, Purple-> rotation base (everything else in between follows the colors of the rainbow shorter wavelength -> further down the arm).
-
+- record my parts of the video
+- peer review 
+- vibe
+- collect key points for the report
+- 
 
 #### Sushant:
 
