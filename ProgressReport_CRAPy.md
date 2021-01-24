@@ -270,7 +270,10 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 ## Progress: Tuesday 12 January, 2021
 
-#### Adjaye:
+#### Adjaye: 
+
+- Gathered inspiration for solar panel design
+- Prepared for exam on thursday in the evening
 
 
 #### Francesco:
@@ -306,7 +309,9 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 
 ## Progress: Wednesday 13 January, 2021
 
-#### Adjaye:
+#### Adjaye: 
+
+- Took the day off as the exam was the next day.
 
 
 #### Francesco:
@@ -340,6 +345,8 @@ No progress due to trip from Italy to Maastrict! The car broke down.
 ## Progress: Thursday 14 January, 2021
 
 #### Adjaye:
+
+- Day of exam, continued to work on design in the evening.
 
 
 #### Francesco:
@@ -469,6 +476,10 @@ FINALLY 10 WHEELS THAT DON´T SLIP!!!
 
 #### Adjaye:
 
+- Presented  slided crank design to Marco, the design had too many issues in that it had too many moving parts, and was not feasible for the space of the rover and its other components. The design for the solar panel had a similar issue and would have gotten in the way of the lidar and camera.
+
+-Beginning of a new design for both collection box and solar panel.
+
 
 #### Francesco:
 - Created the first part of the web app and tested it with a randomly populated set of data. Passed on the whole day trouble shooting, the code is very big.
@@ -501,6 +512,8 @@ Now implemented individual script into combined code.
 
 #### Adjaye:
 
+- Continuing to work on design.
+
 
 #### Francesco:
 - Continued with yesterday's trouble shooting and have been working on some ideas for the video
@@ -527,6 +540,8 @@ Terrible weather might be making the connection to satellites difficult.
 ## Progress: Wednesday 20 January, 2021
 
 #### Adjaye:
+
+- Finished design, the new collection box design recieved the go ahead as well as the solar panel raiser.
 
 
 #### Francesco:
@@ -556,6 +571,7 @@ Terrible weather might be making the connection to satellites difficult.
 ## Progress: Thursday 21 January, 2021
 
 #### Adjaye:
+- Solar Panel raiser was dropped due to lack of time and so preparing the collection box was put on priority.
 
 
 #### Francesco:
@@ -588,6 +604,9 @@ Terrible weather might be making the connection to satellites difficult.
 
 #### Adjaye:
 
+- Cutting plexiglass for the assembling of the collection box.
+- Assembled turning axle box.
+
 
 #### Francesco:
 - Worked on a light following system for the rover
@@ -615,6 +634,10 @@ Terrible weather might be making the connection to satellites difficult.
 ## Progress: Saturday 23 January, 2021
 
 #### Adjaye:
+
+- Helped with the making of videos
+- Sanding/adjusting the collection box
+- As it would turn out the collection box may not be most practical so a different one was designed in Fusion 360
 
 
 #### Francesco:
