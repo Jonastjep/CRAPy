@@ -590,7 +590,9 @@ Terrible weather might be making the connection to satellites difficult.
 
 
 #### Francesco:
-
+- Worked on a light following system for the rover
+- Wrote part of the report's introduction
+- Revised the web app code
 
 #### Jonas:
 
@@ -616,7 +618,9 @@ Terrible weather might be making the connection to satellites difficult.
 
 
 #### Francesco:
-
+- Took half of the presentation videos
+- Soldered and assembled the light following system
+- Wrote part of the report
 
 #### Jonas:
 
