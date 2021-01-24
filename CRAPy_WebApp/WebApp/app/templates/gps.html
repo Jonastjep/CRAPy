@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Stream{% endblock %}
+{% block content %}
+
+  <p> Enter number of latest samples to retrieve:
+    <form method="POST">
+      <input name="numSamples" value= {{numSamples}}>
+      <input type="submit">
+    </form>
+  </p>
+
+	<script src="static/p5.min.js"></script>
+
+	<script src="static/mappa-mundi.js"></script>
+	<script src="static/GPS_sketch.js"></script>
+
+{% endblock %}
