@@ -19,8 +19,8 @@ if(typeof window.sensordata === "undefined"){
 
 for (i = 0; i < ang.length; i++) {
 
-  x[i] = d[i] * Math.cos(ang[i])
-  y[i] = d[i] * Math.sin(ang[i])
+  x[i] = d[i] * Math.cos(ang[i]* (Math.PI/180))
+  y[i] = d[i] * Math.sin(ang[i]* (Math.PI/180))
 
 }
 Plotly.plot('graph', [{
@@ -28,8 +28,11 @@ Plotly.plot('graph', [{
   y: y,
   mode: 'markers'
 }], {
-  xaxis: {range: [-40, 40]},
-  yaxis: {range: [-40, 40]}
+  autosize: false,
+  width: 500,
+  height: 500
+  xaxis: {range: [-500, 500]},
+  yaxis: {range: [-500, 500]}
 }, {showSendToCloud:true})
 
 function compute () {
@@ -43,8 +46,8 @@ function compute () {
   }
   for (i = 0; i < ang.length; i++) {
 
-    x[i] = d[i] * Math.cos(ang[i])
-    y[i] = d[i] * Math.sin(ang[i])
+  x[i] = d[i] * Math.cos(ang[i]* (Math.PI/180))
+  y[i] = d[i] * Math.sin(ang[i]* (Math.PI/180))
 
   }
 }
