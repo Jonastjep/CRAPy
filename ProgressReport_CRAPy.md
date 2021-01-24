@@ -657,7 +657,7 @@ Terrible weather might be making the connection to satellites difficult.
 #### Timon:
 - adapt script of what I say. 
 - get articles for the report
--work
+- work (the thing where you do something and get money)
 
 
 #### Sushant:
