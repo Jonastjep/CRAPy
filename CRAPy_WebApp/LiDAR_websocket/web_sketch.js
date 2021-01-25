@@ -1,5 +1,5 @@
 // Open Connection to the Server
-var ws = new WebSocket("ws://127.0.0.1:5678/");
+var ws = new WebSocket("ws://192.168.4.1:5678/");
 ws.onmessage = function (event) {
   window.sensordata = JSON.parse(event.data);
   // window.sensordata = event.data;
@@ -30,7 +30,7 @@ Plotly.plot('graph', [{
 }], {
   autosize: false,
   width: 500,
-  height: 500
+  height: 500,
   xaxis: {range: [-500, 500]},
   yaxis: {range: [-500, 500]}
 }, {showSendToCloud:true})
