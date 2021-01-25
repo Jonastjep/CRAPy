@@ -26,8 +26,8 @@ p1.start(0)
 
 # Pins where we have connected servos
 servo_rot = 5
-servo_a1 = 6
-servo_a2 = 13
+servo_a1 = 13
+servo_a2 = 6
 servo_roll = 19
 servo_pitch = 26
 servo_grip = 21

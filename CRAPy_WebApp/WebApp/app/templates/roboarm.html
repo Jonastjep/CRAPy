@@ -22,6 +22,11 @@
             <p>Angle: <span id="ival6"></span></p><br>
 
         </form>
+        
+        <form method="GET" action="/stop_arm" id="form1">
+              <button form="form1" type="submit" class="btn btn-danger" form>Stop the arm</button>
+        </form>
+        
 
     <script src="{{url_for('.static', filename='roboarm_sliders.js')}}"></script>
 {% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Stream{% endblock %}
+{% block content %}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <div class="container" style="width:600px; height:400px">
+      <canvas id="air_composition_data"><canvas>
+    </div>
+    <div class="container" style="width:600px; height:400px">
+      <canvas id="temperature_data"><canvas>
+    </div>
+    <div class="container" style="width:600px; height:400px">
+      <canvas id="humidity_data"><canvas>
+    </div>
+      <div class="container" style="width:600px; height:400px">
+        <canvas id="pressure_data"><canvas>
+    </div>
+    <div class="container" style="width:600px; height:400px">
+      <canvas id="altitude_data"><canvas>
+  </div>
+  <div class="container" style="width:600px; height:400px">
+    <canvas id="moisture_of_the_soil_data"><canvas>
+  </div>
+    <script src="static/sensor_script.js?nocache=he"></script>
+{% endblock %}

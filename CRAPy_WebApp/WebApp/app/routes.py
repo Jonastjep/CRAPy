@@ -2,7 +2,6 @@ from app import app, p, p1, vs, outputFrame, lock
 from app import prot,pa1, pa2, proll, ppitch, pgrip
 from flask import Flask, Response, render_template, request, flash, redirect, url_for, json
 
-
 #imports for Stream
 import RPi.GPIO as GPIO
 from time import sleep
@@ -11,9 +10,9 @@ import imutils
 import datetime
 from app.singlemotiondetect import SingleMotionDetect
 
-#imports for GPS
+#imports for GPS and sensors
 import os
-from app.dataProcessingLib import sqliteToJson
+from app.dataProcessingLib import sqliteToJson_GPS, sqliteToJson_sensors
 
 
 @app.route('/')
@@ -113,7 +112,7 @@ def video_feed():
 @app.route('/gps')
 def map():
     #This creates the json file that the script will use when rendered
-    sqliteToJson("app/static/", "app/GPS_data.db")
+    sqliteToJson_GPS("app/static/", "app/GPS_data.db")
     return render_template('gps.html')
 
 @app.route('/gps', methods=['POST'])
@@ -127,11 +126,11 @@ def map_form():
 
 @app.route("/roboArm")
 def roboArm():
-    Rotation = 8
-    Arm_1 = 8
-    Arm_2 = 8
-    Roll = 8
-    Pitch = 8
+    Rotation = 190
+    Arm_1 = 127
+    Arm_2 = 100
+    Roll = 133
+    Pitch = 144
     Gripper = 8
 
     return render_template('roboarm.html', lastval1=Rotation, lastval2=Arm_1, lastval3=Arm_2, lastval4=Roll, lastval5=Pitch, lastval6=Gripper )
@@ -165,14 +164,34 @@ def armSend():
     # Give servo some time to move
     sleep(1)
     # Pause the servo
+    
+    return render_template('roboarm.html', lastval1=val1, lastval2=val2, lastval3=val3, lastval4=val4, lastval5=val5, lastval6=val6)
+
+@app.route('/stop_arm')
+def stopArm():
+    Rotation = 190
+    Arm_1 = 127
+    Arm_2 = 100
+    Roll = 133
+    Pitch = 144
+    Gripper = 8
+    
     prot.ChangeDutyCycle(0)
     pa1.ChangeDutyCycle(0)
     pa2.ChangeDutyCycle(0)
     proll.ChangeDutyCycle(0)
     ppitch.ChangeDutyCycle(0)
     pgrip.ChangeDutyCycle(0)
-    return render_template('roboarm.html', lastval1=val1, lastval2=val2, lastval3=val3, lastval4=val4, lastval5=val5, lastval6=val6)
+    
+    return render_template('roboarm.html',lastval1=Rotation, lastval2=Arm_1, lastval3=Arm_2, lastval4=Roll, lastval5=Pitch, lastval6=Gripper)
 
+
+############################ SENSORS #########################################
+@app.route('/sensors')
+def sensors():
+#This creates a json file where to store the data from the sqlite database
+    sqliteToJson_sensors("app/static", "app/ArduinoData.db")
+    return render_template('sensors.html')
 
 ########################### CONTROL SGVHAK ###################################
 

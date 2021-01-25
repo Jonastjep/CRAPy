@@ -13,7 +13,7 @@ import PyLidar3
 import time # Time module
 
 #In linux type in terminal -- ls /dev/tty* 
-port = "/dev/ttyUSB0" #linux
+port = "/dev/ttyUSB2" #linux
 Obj = PyLidar3.YdLidarX4(port)
 
 # How often should data be sent? (in sec)
