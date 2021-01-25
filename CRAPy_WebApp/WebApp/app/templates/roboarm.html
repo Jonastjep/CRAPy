@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Stream{% endblock %}
+{% block content %}
+    <h2> CRAPy Robotic Arm Control </h2>
+        <form method="POST" action="/roboArm_send" id="form">
+            <p>Rotation <input type="range" min="0" max="270" name="Rotation" id="myRange1" value={{lastval1}}> </p>
+            <p>Angle: <span id="ival1"></span></p><br>
+
+            <p>Arm 1 <input type="range" min="0" max="270" name="Arm_1" id="myRange2" value={{lastval2}}> </p>
+            <p>Angle: <span id="ival2"></span></p><br>
+            
+            <p>Arm 2 <input type="range" min="0" max="270" name="Arm_2" id="myRange3" value={{lastval3}}> </p>
+            <p>Angle: <span id="ival3"></span></p><br>
+            
+            <p>Roll <input type="range" min="0" max="180" name="Roll" id="myRange4" value={{lastval4}}> </p>
+            <p>Angle: <span id="ival4"></span></p><br>
+            
+            <p>Pitch <input type="range" min="0" max="180" name="Pitch" id="myRange5" value={{lastval5}}> </p>
+            <p>Angle: <span id="ival5"></span></p><br>
+            
+            <p>Gripper <input type="range" min="0" max="180" name="Gripper" id="myRange6" value={{lastval6}}> </p>
+            <p>Angle: <span id="ival6"></span></p><br>
+
+        </form>
+        
+        <form method="GET" action="/stop_arm" id="form1">
+              <button form="form1" type="submit" class="btn btn-danger" form>Stop the arm</button>
+        </form>
+        
+
+    <script src="{{url_for('.static', filename='roboarm_sliders.js')}}"></script>
+{% endblock %}

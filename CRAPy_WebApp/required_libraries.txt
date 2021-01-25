@@ -1,0 +1,21 @@
+FLASK
+pip3 install Flask
+sudo apt install sqlite3
+
+GENERAL
+pip3 install matplotlib
+pip3 install numpy
+pip3 install scipy
+pip3 install plotly
+
+CAMERA 
+pip3 install imutils
+sudo apt-get install libatlas-base-dev
+pip3 install opencv-python
+
+LIDAR
+pip3 install PyLidar3
+
+SENSORS
+pip3 install Adafruit-Blinka
+pip3 install adafruit_amg88xx

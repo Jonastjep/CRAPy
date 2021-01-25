@@ -1,0 +1,56 @@
+<!--
+MIT License
+
+Copyright (c) 2018 Roger Cheng
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+{% extends "layout.html" %}
+{% block body %}
+<script type="text/javascript" src="{{url_for('static', filename='steering_trim.js')}}"></script>
+<input type="hidden" id="steering_trim" value="{{url_for('steering_trim')}}" />
+<div class="container">
+  <p>Step 1: Choose Wheel</p>
+  <div class="row">
+    {% for wheel in steered_wheels %}
+    <div class="col s6">
+      <p>
+        <input name="wheel-name" class="wheel-radio" type="radio" id="{{wheel}}"/>
+        <label class="blue-text" for="{{wheel}}">{{wheel}}</label>
+      </p>
+    </div>
+    {% endfor %}
+  </div>
+  <p>Step 2: Adjust Angle</p>
+  <div class="row">
+    <a id="minus5" class="waves-effect waves-light btn col s2 blue adjust" disabled>-5</a>
+    <a id="minus1" class="waves-effect waves-light btn col s2 blue adjust" disabled>-1</a>
+    <a id="angleOut" class="btn col s4 white blue-text">0</a>
+    <a id="plus1" class="waves-effect waves-light btn col s2 blue adjust" disabled>+1</a>
+    <a id="plus5" class="waves-effect waves-light btn col s2 blue adjust" disabled>+5</a>
+  </div>
+  <p>Step 3: Cancel or Accept</p>
+  <div class="row">
+    <a id="trimCancel" class="waves-effect waves-light btn col s12 white blue-text trim-action" disabled>Cancel Adjustment, Return To Zero</a>
+  </div>
+  <div class="row">
+    <a id="trimZero" class="waves-effect waves-light btn col s12 blue trim-action" disabled>Accept Current Angle as New Zero</a>
+  </div>
+</div>
+{% endblock %}

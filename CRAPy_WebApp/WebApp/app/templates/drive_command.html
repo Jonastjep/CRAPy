@@ -1,0 +1,64 @@
+<!--
+MIT License
+
+Copyright (c) 2018 Roger Cheng
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+{% extends "layout.html" %}
+{% block body %}
+<script type="text/javascript" src="{{url_for('static', filename='drive_command.js')}}"></script>
+<input type="hidden" id="command" value="{{url_for('drive_command')}}" />
+<div class="container">
+  <div class="row">
+    <div class="col s2">
+      <h5>Velocity %</h5>
+    </div>
+    <div class="col s8">
+      <p class="range-field">
+        <input type="range" id="velocityRange" min="-100" max="100" />
+      </p>
+    </div>
+    <div class="col s2">
+      <a id="velocityZero" class="waves-effect waves-light btn col s12 light-blue lighten-5 blue-text">Zero</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s2">
+      <h5>Angle %</h5>
+    </div>
+    <div class="col s8">
+      <p class="range-field">
+        <input type="range" id="angleRange" min="-100" max="100" />
+      </p>
+    </div>
+    <div class="col s2">
+      <a id="angleZero" class="waves-effect waves-light btn col s12 light-blue lighten-5 blue-text">Zero</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s4 offset-s1">
+      <a id="sendCommand" class="waves-effect waves-light btn col s12 blue">Send Command</a>
+    </div>
+    <div class="col s4 offset-s2">
+      <a id="sendStopCommand" class="waves-effect waves-light btn col s12 white blue-text">Send Stop Command</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
